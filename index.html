@@ -3,41 +3,52 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>MATLOE — Location de camping-car à Dunkerque (Glamys 322, 7 places)</title>
-  <meta name="description" content="Location de camping-car à Dunkerque : Mc Louis Glamys 322, 7 places. 200 km/j inclus, assurance Groupama, attelage 2T, caméra de recul, porte 4 vélos, TV, GPS, plancha, équipement complet." />
 
-  <!-- Open Graph / SEO -->
-  <meta property="og:title" content="MATLOE — Location de camping-car à Dunkerque">
-  <meta property="og:description" content="Glamys 322 (7 places) — 200 km/j inclus, assurance Groupama, équipement complet. Demandez une dispo !">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://www.matloe.fr/img/hero.jpg">
-  <meta property="og:url" content="https://www.matloe.fr/">
+  <title>Location de camping-car à Dunkerque (Glamys 322, 7 places) – MATLOE</title>
+  <meta name="description" content="MATLOE loue un Mc Louis Glamys 322 (7 places) près de Dunkerque. 200 km/j inclus, assurance Groupama, attelage 2T, caméra de recul, TV, GPS, plancha, équipement complet. Demandez une dispo !" />
+  <link rel="canonical" href="https://www.matloe.fr/" />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+  <meta name="theme-color" content="#001220" />
+
+  <!-- Open Graph -->
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Location de camping-car à Dunkerque – Glamys 322 (7 places)" />
+  <meta property="og:description" content="200 km/j inclus • Assurance Groupama • Attelage 2T • Véhicule récent & équipé. Demandez une dispo !" />
+  <meta property="og:url" content="https://www.matloe.fr/" />
+  <meta property="og:site_name" content="MATLOE" />
+  <meta property="og:image" content="https://www.matloe.fr/img/hero.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Location de camping-car à Dunkerque – Glamys 322 (7 places)" />
+  <meta name="twitter:description" content="200 km/j inclus • Assurance Groupama • Attelage 2T • Véhicule récent & équipé." />
+  <meta name="twitter:image" content="https://www.matloe.fr/img/hero.jpg" />
+
+  <!-- Favicon -->
   <link rel="icon" href="/img/logo-matloe.png" />
+
+  <!-- Préchargement image héro -->
+  <link rel="preload" as="image" href="/img/hero.jpg" imagesrcset="/img/hero.jpg 1200w" />
 
   <style>
     :root{
-      --brand:#001220;        /* bleu très sombre */
-      --accent:#1463ff;       /* bleu CTA */
-      --muted:#6b7280;        /* gris */
-      --bg:#f7fafc;           /* fond */
-      --white:#fff;
+      --brand:#001220; --brand-2:#0f172a; --accent:#1463ff; --muted:#6b7280; --bg:#f7fafc; --white:#fff;
     }
     *{box-sizing:border-box}
     html,body{height:100%}
     body{
       margin:0;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Apple Color Emoji","Segoe UI Emoji";
-      color:#0b1220;
-      background:var(--bg);
-      line-height:1.45;
+      font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,"Helvetica Neue",Arial,"Apple Color Emoji","Segoe UI Emoji";
+      color:#0b1220; background:var(--bg); line-height:1.45;
     }
     a{color:var(--accent); text-decoration:none}
     a:hover{opacity:.9}
 
-    /* Layout */
     .container{width:min(1100px,92vw); margin:0 auto; padding:0 0 56px}
 
-    /* Header */
     header{
       position:sticky; top:0; z-index:20;
       backdrop-filter:saturate(1.2) blur(6px);
@@ -60,11 +71,10 @@
     .btn.primary{background:var(--accent); color:#fff}
     .btn.ghost{border:1px solid #cbd5e1; color:#0b1220; background:#fff}
 
-    /* Hero */
     .hero{
       position:relative; min-height:62vh; display:grid; place-items:center;
       color:#fff; text-align:center; isolation:isolate;
-      background:#0c1b2d url('/img/hero.jpg') center/cover no-repeat fixed;
+      background:#0c1b2d url('/img/hero.jpg') center/cover no-repeat;
     }
     .hero::after{
       content:""; position:absolute; inset:0; z-index:-1;
@@ -78,47 +88,60 @@
     .cta{display:flex; gap:12px; justify-content:center; flex-wrap:wrap; margin-top:14px}
     .cta .btn{box-shadow:0 8px 24px rgba(20,99,255,.22)}
 
-    /* Sections */
     section{padding:56px 0}
     h2{font-size: clamp(24px, 3.6vw, 34px); margin:.2rem 0 1rem; color:var(--brand)}
     .lead{color:#334155; max-width:850px}
 
-    /* Atouts */
     .pill-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:10px; margin-top:18px}
     .pill{display:flex; gap:10px; align-items:flex-start; padding:10px 12px; background:#fff; border:1px solid #e5e7eb; border-radius:12px}
     .pill b{color:#0b1220}
 
-    /* Tarifs */
     .cards{display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:14px; margin-top:18px}
     .card{background:#fff; border:1px solid #e5e7eb; border-radius:14px; padding:16px}
     .price{font-size:28px; font-weight:800; color:var(--accent)}
     .muted{color:#64748b}
 
-    /* Galerie */
     .gallery{display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:10px}
     .gallery img{width:100%; height:230px; object-fit:cover; border-radius:12px; background:#e2e8f0}
     .gallery figure{margin:0}
     .gallery figcaption{font-size:14px; color:#475569; margin-top:6px}
 
-    /* Contact */
     .contact-box{display:grid; grid-template-columns:1.1fr .9fr; gap:24px}
     @media (max-width:820px){ .contact-box{grid-template-columns:1fr} .hero{background-attachment:scroll} }
 
     footer{border-top:1px solid #e5e7eb; padding:32px 0; color:#475569}
   </style>
 
-  <!-- Schema.org -->
+  <!-- Schema.org : AutoRental + offres -->
   <script type="application/ld+json">
   {
-    "@context":"https://schema.org",
-    "@type":"LocalBusiness",
-    "name":"MATLOE",
-    "url":"https://www.matloe.fr",
-    "image":"https://www.matloe.fr/img/hero.jpg",
-    "telephone":"+33621681482",
-    "email":"contact@matloe.fr",
-    "address":{"@type":"PostalAddress","addressLocality":"Dunkerque","addressCountry":"FR"},
-    "description":"Location de camping-car Glamys 322 — 7 places, 200 km/j inclus, assurance Groupama, équipement complet."
+    "@context": "https://schema.org",
+    "@type": "AutoRental",
+    "name": "MATLOE",
+    "url": "https://www.matloe.fr",
+    "image": "https://www.matloe.fr/img/hero.jpg",
+    "telephone": "+33621681482",
+    "email": "contact@matloe.fr",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Dunkerque",
+      "addressRegion": "Hauts-de-France",
+      "postalCode": "59140",
+      "addressCountry": "FR"
+    },
+    "areaServed": ["Dunkerque","Nord","Flandre Maritime"],
+    "makesOffer": {
+      "@type": "Offer",
+      "priceCurrency": "EUR",
+      "availability": "https://schema.org/InStock",
+      "itemOffered": { "@type": "Product", "name": "Mc Louis Glamys 322 – 7 places" },
+      "priceSpecification": [
+        {"@type":"UnitPriceSpecification","name":"Basse saison","price":100,"unitText":"jour"},
+        {"@type":"UnitPriceSpecification","name":"Mi-saison","price":110,"unitText":"jour"},
+        {"@type":"UnitPriceSpecification","name":"Vacances Zone B","price":140,"unitText":"jour"},
+        {"@type":"UnitPriceSpecification","name":"Haute saison","price":165,"unitText":"jour"}
+      ]
+    }
   }
   </script>
 </head>
@@ -128,26 +151,27 @@
   <header>
     <div class="container header-bar">
       <div class="brand">
-        <img src="/img/logo-matloe.png" alt="MATLOE" />
+        <img src="/img/logo-matloe.png" alt="MATLOE" width="128" height="128" />
         <b>MATLOE</b>
       </div>
       <nav>
         <a href="#atouts">Atouts</a>
         <a href="#tarifs">Tarifs</a>
         <a href="#galerie">Galerie</a>
+        <a href="#faq">FAQ</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
   <!-- HERO -->
-  <section class="hero">
+  <section class="hero" role="img" aria-label="Camping-car Glamys 322 au bord de mer">
     <div class="container wrap">
       <span class="kicker">Location de camping-car à Dunkerque</span>
       <h1>Mc Louis Glamys 322 — <b>7 places</b></h1>
       <p class="sub">200 km/j inclus • Assurance Groupama • Attelage <b>2&nbsp;tonnes</b> • Véhicule récent &amp; équipé</p>
       <div class="cta">
-        <a class="btn primary" href="https://wa.me/33621681482?text=Bonjour%20MATLOE%2C%20je%20souhaite%20r%C3%A9server%20le%20Glamys%20322">Demander une dispo (WhatsApp)</a>
+        <a class="btn primary" href="https://wa.me/33621681482?text=Bonjour%20MATLOE%2C%20je%20souhaite%20r%C3%A9server%20le%20Glamys%20322" target="_blank" rel="noopener">Demander une dispo (WhatsApp)</a>
         <a class="btn ghost" href="tel:+33621681482">Appeler</a>
       </div>
     </div>
@@ -212,18 +236,28 @@
       <h2>Galerie</h2>
       <p class="lead">Découvrez l’intérieur et l’extérieur du Glamys 322.</p>
       <div class="gallery" style="margin-top:14px">
-        <figure><img loading="lazy" src="/img/exterieur-plage-profil.jpg" alt="Profil extérieur sur la plage"><figcaption>Profil extérieur</figcaption></figure>
-        <figure><img loading="lazy" src="/img/exterieur-plage-arriere.jpg" alt="Arrière extérieur sur la plage"><figcaption>Arrière extérieur</figcaption></figure>
-        <figure><img loading="lazy" src="/img/exterieur-camping-auvent.jpg" alt="Auvent déployé en camping"><figcaption>Auvent déployé</figcaption></figure>
-        <figure><img loading="lazy" src="/img/interieur-vue-ensemble.jpg" alt="Vue d'ensemble intérieure"><figcaption>Intérieur — vue d’ensemble</figcaption></figure>
-        <figure><img loading="lazy" src="/img/dinette-preparee.jpg" alt="Dinette dressée"><figcaption>Dinette</figcaption></figure>
-        <figure><img loading="lazy" src="/img/lits-superposes.jpg" alt="Lits superposés"><figcaption>Lits superposés</figcaption></figure>
-        <figure><img loading="lazy" src="/img/lit-cabine.jpg" alt="Lit de cabine"><figcaption>Lit cabine</figcaption></figure>
-        <figure><img loading="lazy" src="/img/cuisine.jpg" alt="Espace cuisine"><figcaption>Cuisine</figcaption></figure>
-        <figure><img loading="lazy" src="/img/salle-de-bain.jpg" alt="Salle de bain"><figcaption>Salle de bain</figcaption></figure>
-        <figure><img loading="lazy" src="/img/cabine-tableau-bord.jpg" alt="Cabine et tableau de bord"><figcaption>Tableau de bord</figcaption></figure>
-        <figure><img loading="lazy" src="/img/plan-glamys322.webp" alt="Plan du Glamys 322"><figcaption>Plan d’implantation</figcaption></figure>
+        <figure><img src="/img/exterieur-plage-profil.jpg" alt="Glamys 322 – profil extérieur sur la plage" loading="lazy" decoding="async" width="1024" height="768"><figcaption>Profil extérieur</figcaption></figure>
+        <figure><img src="/img/exterieur-plage-arriere.jpg" alt="Glamys 322 – arrière extérieur sur la plage" loading="lazy" decoding="async" width="1024" height="768"><figcaption>Arrière extérieur</figcaption></figure>
+        <figure><img src="/img/exterieur-camping-auvent.jpg" alt="Glamys 322 – auvent déployé au camping" loading="lazy" decoding="async" width="1024" height="768"><figcaption>Auvent déployé</figcaption></figure>
+        <figure><img src="/img/interieur-vue-ensemble.jpg" alt="Intérieur du Glamys 322 – vue d’ensemble" loading="lazy" decoding="async" width="1024" height="768"><figcaption>Intérieur — vue d’ensemble</figcaption></figure>
+        <figure><img src="/img/dinette-preparee.jpg" alt="Dinette dressée du Glamys 322" loading="lazy" decoding="async" width="1024" height="768"><figcaption>Dinette</figcaption></figure>
+        <figure><img src="/img/lits-superposes.jpg" alt="Lits superposés à l’arrière" loading="lazy" decoding="async" width="1024" height="768"><figcaption>Lits superposés</figcaption></figure>
+        <figure><img src="/img/lit-cabine.jpg" alt="Grand lit de capucine" loading="lazy" decoding="async" width="1024" height="768"><figcaption>Lit cabine</figcaption></figure>
+        <figure><img src="/img/cuisine.jpg" alt="Espace cuisine équipé" loading="lazy" decoding="async" width="1024" height="768"><figcaption>Cuisine</figcaption></figure>
+        <figure><img src="/img/salle-de-bain.jpg" alt="Salle de bain avec douche séparée" loading="lazy" decoding="async" width="683" height="1024"><figcaption>Salle de bain</figcaption></figure>
+        <figure><img src="/img/cabine-tableau-bord.jpg" alt="Cabine et tableau de bord Fiat" loading="lazy" decoding="async" width="1024" height="768"><figcaption>Tableau de bord</figcaption></figure>
+        <figure><img src="/img/plan-glamys322.webp" alt="Plan d’implantation du Glamys 322" loading="lazy" decoding="async" width="1024" height="724"><figcaption>Plan d’implantation</figcaption></figure>
       </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+      <h2>FAQ – Questions fréquentes</h2>
+      <div class="lead">Tout ce qu’il faut savoir avant de réserver votre Glamys 322.</div>
+      <details><summary>Quel est le kilométrage inclus&nbsp;?</summary><p>200 km/jour sont inclus. Au-delà, 0,25&nbsp;€/km.</p></details>
+      <details><summary>Quel dépôt de garantie&nbsp;?</summary><p>Une caution de 2 500&nbsp;€ est demandée. Franchise 508&nbsp;€ (≤ 3 ans de permis : 1 016&nbsp;€).</p></details>
+      <details><summary>Les animaux sont-ils acceptés&nbsp;?</summary><p>Non, pour des raisons d’hygiène et d’allergies.</p></details>
+      <details><summary>Quel est l’équipement fourni&nbsp;?</summary><p>Attelage 2T, caméra de recul, TV+TNT, GPS Camper 795, porte 4 vélos, plancha, table & chaises, ustensiles & Nespresso, cales de niveau, couverture pare-brise…</p></details>
     </section>
 
     <!-- CONTACT -->
@@ -234,7 +268,7 @@
           <p class="lead">Besoin d’un devis ou d’une dispo&nbsp;? Contactez-nous — réponse rapide 👇</p>
           <p class="muted">Basé près de <b>Dunkerque</b> (59). Retrait souple selon disponibilités.</p>
           <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:10px">
-            <a class="btn primary" href="https://wa.me/33621681482?text=Bonjour%20MATLOE%2C%20je%20souhaite%20r%C3%A9server%20le%20Glamys%20322">WhatsApp</a>
+            <a class="btn primary" href="https://wa.me/33621681482?text=Bonjour%20MATLOE%2C%20je%20souhaite%20r%C3%A9server%20le%20Glamys%20322" target="_blank" rel="noopener">WhatsApp</a>
             <a class="btn ghost"   href="tel:+33621681482">📞 +33&nbsp;6&nbsp;21&nbsp;68&nbsp;14&nbsp;82</a>
             <a class="btn ghost"   href="mailto:contact@matloe.fr?subject=Demande%20de%20disponibilit%C3%A9%20Glamys%20322&body=Bonjour%2C%20je%20souhaite%20r%C3%A9server%20aux%20dates%20suivantes%20%3A%20">✉️ contact@matloe.fr</a>
           </div>
@@ -263,6 +297,20 @@
       <div class="muted">Dunkerque & environs • France</div>
     </div>
   </footer>
+
+  <!-- FAQ Schema -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {"@type":"Question","name":"Quel est le kilométrage inclus ?","acceptedAnswer":{"@type":"Answer","text":"200 km/jour inclus, puis 0,25 €/km."}},
+      {"@type":"Question","name":"Quel dépôt de garantie ?","acceptedAnswer":{"@type":"Answer","text":"Caution 2 500 €, franchise 508 € (≤ 3 ans de permis : 1 016 €)."}},
+      {"@type":"Question","name":"Les animaux sont-ils acceptés ?","acceptedAnswer":{"@type":"Answer","text":"Non, pour des raisons d’hygiène et d’allergies."}},
+      {"@type":"Question","name":"Quel est l’équipement fourni ?","acceptedAnswer":{"@type":"Answer","text":"Attelage 2T, caméra de recul, TV+TNT, GPS Camper 795, porte 4 vélos, plancha, table & chaises, ustensiles & Nespresso, cales de niveau, couverture pare-brise, etc."}}
+    ]
+  }
+  </script>
 
   <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
 </body>
