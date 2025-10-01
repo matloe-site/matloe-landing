@@ -3,170 +3,215 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>MATLOE – Location de camping-car à Dunkerque</title>
-  <meta name="description" content="Mc Louis Glamys 322 – 7 places. 200 km/j inclus, assurance Groupama, attelage 2T. Véhicule récent & équipé. Porte-vélos 4, caméra de recul, GPS Camper 795, TV TNT, Nespresso…" />
-  <link rel="icon" href="img/logo-matloe.png">
+  <title>MATLOE — Location de camping-car à Dunkerque (Glamys 322, 7 places)</title>
+  <meta name="description" content="Location de camping-car à Dunkerque : Mc Louis Glamys 322, 7 places. 200 km/j inclus, assurance Groupama, attelage 2T, caméra de recul, porte 4 vélos, TV, GPS, plancha, équipement complet." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="MATLOE — Location de camping-car à Dunkerque" />
+  <meta property="og:description" content="Glamys 322 (7 places) — 200 km/j inclus, assurance Groupama, équipement complet. Demandez une dispo !" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/img/hero.jpg" />
+  <meta property="og:url" content="https://www.matloe.fr/" />
+
+  <!-- Favicon (facultatif) -->
+  <link rel="icon" href="/img/logo-matloe.png" />
+
   <style>
     :root{
-      --brand:#0d63a5; --brand-dark:#0b4e82; --ink:#0b1320; --muted:#6b7a8c; --bg:#f4f7fb; --white:#fff; --ok:#10b981;
-      --card:#ffffff; --shadow:0 8px 30px rgba(0,0,0,.06);
-      --max:1100px;
+      --brand:#001220;        /* bleu très sombre */
+      --brand-2:#0f172a;      /* bleu ardoise */
+      --accent:#1463ff;       /* bleu action */
+      --muted:#6b7280;        /* gris */
+      --bg:#f7fafc;           /* fond */
+      --white:#fff;
     }
     *{box-sizing:border-box}
-    html,body{margin:0;padding:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg)}
-    a{color:var(--brand);text-decoration:none}
-    .container{width:min(92%, var(--max));margin:auto}
-    .header{position:sticky;top:0;z-index:20;background:var(--white);box-shadow:var(--shadow)}
-    .header .bar{display:flex;align-items:center;justify-content:space-between;padding:10px 0;gap:12px}
-    .logo{display:flex;align-items:center;gap:10px}
-    .logo img{height:40px;width:auto;border-radius:6px}
-    .brand{font-size:18px;font-weight:700;letter-spacing:.4px}
-    .cta{display:flex;gap:8px}
-    .btn{display:inline-flex;align-items:center;justify-content:center;padding:10px 14px;border-radius:10px;font-weight:600;border:1px solid transparent;transition:.15s}
-    .btn-primary{background:var(--brand);color:var(--white)}
-    .btn-primary:hover{background:var(--brand-dark)}
-    .btn-ghost{background:var(--white);border-color:#e6ecf3;color:var(--ink)}
-    .btn-ghost:hover{border-color:#d6dee7}
-    /* HERO */
-    .hero{position:relative;min-height:62vh;color:var(--white);display:grid;place-items:center;text-align:left}
-    .hero::before{
-      content:"";position:absolute;inset:0;
-      background:
-        linear-gradient(180deg, rgba(13,99,165,.55), rgba(13,99,165,.75)),
-        url("img/hero.jpg") center/cover no-repeat;
-      filter:saturate(.95) contrast(1.05);
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Apple Color Emoji','Segoe UI Emoji';
+      color:#0b1220;
+      background:var(--bg);
+      line-height:1.45;
     }
-    .hero .inner{position:relative;z-index:1;width:min(92%, var(--max));padding:50px 0}
-    .kicker{opacity:.9;text-transform:uppercase;font-weight:700;letter-spacing:.06em;margin-bottom:10px}
-    .title{font-size:clamp(28px, 4.2vw, 44px);line-height:1.15;margin:0 0 10px}
-    .sub{opacity:.95;margin:0 0 20px}
-    .hero .cta .btn{backdrop-filter:blur(4px)}
-    /* SECTION */
-    section{padding:52px 0}
-    h2{font-size:clamp(22px,3.4vw,30px);margin:0 0 16px}
-    .muted{color:var(--muted)}
-    /* TARIFS */
-    .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
-    .card{background:var(--card);border:1px solid #e8eef5;border-radius:14px;padding:14px;box-shadow:var(--shadow)}
-    .card .price{font-weight:800;font-size:20px}
-    .grid{display:grid;gap:12px}
-    /* ATOUTS */
-    .features{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
-    .feature{display:flex;gap:12px;background:var(--card);border:1px solid #e8eef5;border-radius:14px;padding:14px;align-items:flex-start;box-shadow:var(--shadow)}
-    .bullet{width:10px;height:10px;border-radius:50%;background:var(--ok);margin-top:7px;flex:0 0 10px}
-    /* GALERIE */
-    .gallery{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
-    .gallery img{width:100%;height:220px;object-fit:cover;border-radius:12px;border:1px solid #e8eef5;box-shadow:var(--shadow)}
-    /* CALENDRIER */
-    .calendar{background:var(--card);border:1px solid #e8eef5;border-radius:14px;box-shadow:var(--shadow);padding:12px}
-    iframe{width:100%;border:0;height:600px;border-radius:12px}
-    /* CONTACT */
-    .contact{display:grid;grid-template-columns:1.2fr .8fr;gap:16px}
-    .box{background:var(--card);border:1px solid #e8eef5;border-radius:14px;padding:16px;box-shadow:var(--shadow)}
-    .footer{padding:26px 0;color:var(--muted);text-align:center}
-    @media (max-width: 900px){
-      .cards{grid-template-columns:1fr 1fr}
-      .contact{grid-template-columns:1fr}
+    a{color:var(--accent); text-decoration:none}
+    a:hover{opacity:.9}
+
+    /* Layout */
+    .container{width:min(1100px,92vw); margin:0 auto; padding:0 0 56px}
+
+    /* Header */
+    header{
+      position:sticky; top:0; z-index:20;
+      backdrop-filter:saturate(1.2) blur(6px);
+      background:rgba(255,255,255,.75);
+      border-bottom:1px solid #e5e7eb;
     }
-    @media (max-width: 560px){
-      .cards{grid-template-columns:1fr}
-      .hero{min-height:56vh}
+    .header-bar{
+      display:flex; align-items:center; justify-content:space-between;
+      padding:12px 0; gap:18px;
     }
+    .brand{display:flex; align-items:center; gap:10px}
+    .brand img{height:38px; width:auto; display:block}
+    .brand b{font-weight:800; letter-spacing:.3px; color:var(--brand)}
+
+    nav{display:flex; gap:18px; flex-wrap:wrap}
+    nav a{color:#334155; font-weight:600}
+    nav a:hover{color:var(--accent)}
+
+    .btn{display:inline-block; padding:10px 16px; border-radius:10px; font-weight:700}
+    .btn.primary{background:var(--accent); color:#fff}
+    .btn.ghost{border:1px solid #cbd5e1; color:#0b1220; background:#fff}
+
+    /* Hero */
+    .hero{
+      position:relative; min-height:62vh; display:grid; place-items:center;
+      color:#fff; text-align:center; isolation:isolate;
+      background:#0c1b2d url('img/hero.jpg') center/cover no-repeat fixed;
+    }
+    .hero::after{
+      content:""; position:absolute; inset:0; z-index:-1;
+      background:linear-gradient(180deg, rgba(0,18,32,.55), rgba(0,18,32,.35) 40%, rgba(0,18,32,.75));
+    }
+    .hero .wrap{padding:80px 0}
+    .kicker{display:inline-block; padding:6px 10px; border-radius:999px; background:rgba(255,255,255,.12); border:1px solid rgba(255,255,255,.25); font-weight:700; letter-spacing:.3px}
+    h1{margin:.6rem auto .3rem; font-size: clamp(28px, 4.2vw, 44px)}
+    .sub{max-width:820px; margin:0 auto 18px; opacity:.95}
+
+    .cta{display:flex; gap:12px; justify-content:center; flex-wrap:wrap; margin-top:14px}
+    .cta .btn{box-shadow:0 8px 24px rgba(20,99,255,.22)}
+
+    /* Sections */
+    section{padding:56px 0}
+    h2{font-size: clamp(24px, 3.6vw, 34px); margin:.2rem 0 1rem; color:var(--brand)}
+    .lead{color:#334155; max-width:850px}
+
+    /* Atouts */
+    .pill-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:10px; margin-top:18px}
+    .pill{display:flex; gap:10px; align-items:flex-start; padding:10px 12px; background:#fff; border:1px solid #e5e7eb; border-radius:12px}
+    .pill b{color:#0b1220}
+
+    /* Tarifs */
+    .cards{display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:14px; margin-top:18px}
+    .card{background:#fff; border:1px solid #e5e7eb; border-radius:14px; padding:16px}
+    .price{font-size:28px; font-weight:800; color:var(--accent)}
+    .muted{color:#64748b}
+
+    /* Galerie */
+    .gallery{display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:10px}
+    .gallery img{width:100%; height:230px; object-fit:cover; border-radius:12px; background:#e2e8f0}
+    .gallery figure{margin:0}
+    .gallery figcaption{font-size:14px; color:#475569; margin-top:6px}
+
+    /* Contact */
+    .contact-box{display:grid; grid-template-columns:1.1fr .9fr; gap:24px}
+    @media (max-width:820px){ .contact-box{grid-template-columns:1fr} .hero{background-attachment:scroll} }
+
+    footer{border-top:1px solid #e5e7eb; padding:32px 0; color:#475569}
   </style>
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"LocalBusiness",
+    "name":"MATLOE",
+    "url":"https://www.matloe.fr",
+    "image":"https://www.matloe.fr/img/hero.jpg",
+    "telephone":"+33621681482",
+    "email":"contact@matloe.fr",
+    "address":{"@type":"PostalAddress","addressLocality":"Dunkerque","addressCountry":"FR"},
+    "description":"Location de camping-car Glamys 322 — 7 places, 200 km/j inclus, assurance Groupama, équipement complet."
+  }
+  </script>
 </head>
 <body>
 
-<header class="header">
-  <div class="container bar">
-    <div class="logo">
-      <img src="img/logo-matloe.png" alt="Logo MATLOE">
-      <div class="brand">MATLOE</div>
+  <!-- HEADER -->
+  <header>
+    <div class="container header-bar">
+      <div class="brand">
+        <img src="img/logo-matloe.png" alt="MATLOE" />
+        <b>MATLOE</b>
+      </div>
+      <nav>
+        <a href="#atouts">Atouts</a>
+        <a href="#tarifs">Tarifs</a>
+        <a href="#galerie">Galerie</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
-    <div class="cta">
-      <a class="btn btn-ghost" href="tel:+33600000000">Appeler</a>
-      <a class="btn btn-primary" href="https://wa.me/33600000000" target="_blank" rel="noopener">WhatsApp</a>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container wrap">
+      <span class="kicker">Location de camping-car à Dunkerque</span>
+      <h1>Mc Louis Glamys 322 — <b>7 places</b></h1>
+      <p class="sub">200 km/j inclus • Assurance Groupama • Attelage <b>2&nbsp;tonnes</b> • Véhicule récent &amp; équipé</p>
+      <div class="cta">
+        <a class="btn primary" href="https://wa.me/33621681482?text=Bonjour%20MATLOE%2C%20je%20souhaite%20r%C3%A9server%20le%20Glamys%20322">Demander une dispo (WhatsApp)</a>
+        <a class="btn ghost" href="tel:+33621681482">Appeler</a>
+      </div>
     </div>
-  </div>
-</header>
+  </section>
 
-<section class="hero">
-  <div class="inner">
-    <div class="kicker">Location de camping-car à Dunkerque</div>
-    <h1 class="title">Mc Louis Glamys 322 — 7 places</h1>
-    <p class="sub">200 km/j inclus • Assurance Groupama • <strong>Attelage 2T</strong> • Véhicule récent & entièrement équipé</p>
-    <div class="cta">
-      <a class="btn btn-primary" href="https://wa.me/33600000000" target="_blank" rel="noopener">Demander une dispo (WhatsApp)</a>
-      <a class="btn btn-ghost" href="tel:+33600000000">Appeler</a>
-    </div>
-  </div>
-</section>
+  <main class="container">
 
-<section class="container">
-  <h2>Tarifs rapides</h2>
-  <p class="muted">Exemples à la journée (200 km/j inclus). Dégressifs selon durée.</p>
-  <div class="cards">
-    <div class="card"><div class="muted">Basse saison (oct–mars)</div><div class="price">100 € / jour</div></div>
-    <div class="card"><div class="muted">Mi-saison (avr–juin + sept.)</div><div class="price">110 € / jour</div></div>
-    <div class="card"><div class="muted">Vacances Zone B</div><div class="price">140 € / jour</div></div>
-    <div class="card"><div class="muted">Haute saison (juil–août)</div><div class="price">165 € / jour</div></div>
-  </div>
-</section>
+    <!-- ATOUTS -->
+    <section id="atouts">
+      <h2>Points forts &amp; équipements</h2>
+      <p class="lead">Tout est prêt pour partir sereinement : sécurité, confort et accessoires pensés pour les familles et les séjours nomades.</p>
 
-<section class="container">
-  <h2>Atouts & équipements</h2>
-  <div class="grid features">
-    <div class="feature"><div class="bullet"></div><div><strong>7 places carte grise & couchages</strong> – capucine + lits superposés</div></div>
-    <div class="feature"><div class="bullet"></div><div><strong>Attelage 2 tonnes</strong> – remorque / porte-moto possible</div></div>
-    <div class="feature"><div class="bullet"></div><div><strong>Caméra de recul</strong> + <strong>convertisseur 220V</strong></div></div>
-    <div class="feature"><div class="bullet"></div><div><strong>Smart TV + antenne TNT</strong>, <strong>GPS Garmin Camper 795</strong></div></div>
-    <div class="feature"><div class="bullet"></div><div><strong>Porte-vélos (4)</strong> + plancha gaz, 2 bouteilles de gaz</div></div>
-    <div class="feature"><div class="bullet"></div><div>Table & chaises extérieures, <strong>cales de niveau</strong>, housse thermique pare-brise</div></div>
-    <div class="feature"><div class="bullet"></div><div><strong>Ustensiles complets</strong> (assiettes, verres, couverts…), <strong>Nespresso</strong></div></div>
-    <div class="feature"><div class="bullet"></div><div><strong>200 km/j inclus</strong> (0,25 €/km au-delà), assurance Groupama</div></div>
-  </div>
-</section>
+      <div class="pill-grid" style="margin-top:10px">
+        <div class="pill">🚗 <div><b>Attelage 2&nbsp;T</b><br><span class="muted">Idéal pour tracter (remorque / porte-moto).</span></div></div>
+        <div class="pill">🎥 <div><b>Caméra de recul</b><br><span class="muted">Manœuvres facilitées.</span></div></div>
+        <div class="pill">🔌 <div><b>Convertisseur 220&nbsp;V</b><br><span class="muted">Alimente vos petits appareils.</span></div></div>
+        <div class="pill">📺 <div><b>Smart TV + antenne TNT</b><br><span class="muted">Divertissement à bord.</span></div></div>
+        <div class="pill">🚲 <div><b>Porte 4 vélos</b><br><span class="muted">Pratique pour les balades.</span></div></div>
+        <div class="pill">🛰️ <div><b>GPS Garmin Camper 795</b><br><span class="muted">Itinéraires adaptés au gabarit camping-car.</span></div></div>
+        <div class="pill">🔥 <div><b>Plancha gaz + 2 bouteilles</b><br><span class="muted">Parfait pour les repas extérieurs.</span></div></div>
+        <div class="pill">🪑 <div><b>Table &amp; chaises</b><br><span class="muted">Salon de plein air inclus.</span></div></div>
+        <div class="pill">🧱 <div><b>Cales de niveau</b><br><span class="muted">Stationnement à plat partout.</span></div></div>
+        <div class="pill">🧊 <div><b>Couverture pare-brise thermique</b><br><span class="muted">Isolation été / hiver.</span></div></div>
+        <div class="pill">🍽️ <div><b>Ustensiles &amp; Nespresso</b><br><span class="muted">Assiettes, verres, couverts, etc.</span></div></div>
+        <div class="pill">🛡️ <div><b>Assurance Groupama</b><br><span class="muted">Incluse, pour partir serein.</span></div></div>
+      </div>
+    </section>
 
-<section class="container">
-  <h2>Galerie</h2>
-  <div class="grid gallery">
-    <img src="img/interieur-vue-ensemble.jpg" alt="Intérieur – vue d’ensemble">
-    <img src="img/cuisine.jpg" alt="Cuisine">
-    <img src="img/lit-cabine.jpg" alt="Lit capucine">
-    <img src="img/lits-superposes.jpg" alt="Lits superposés">
-    <img src="img/exterieur-plage-profil.jpg" alt="Profil extérieur">
-    <img src="img/cabine-tableau-bord.jpg" alt="Tableau de bord">
-  </div>
-</section>
+    <!-- TARIFS -->
+    <section id="tarifs">
+      <h2>Tarifs rapides</h2>
+      <div class="cards">
+        <div class="card">
+          <div class="muted">Basse saison</div>
+          <div class="price">100&nbsp;€</div>
+          <div class="muted">/ jour — oct • mars</div>
+        </div>
+        <div class="card">
+          <div class="muted">Mi-saison</div>
+          <div class="price">110&nbsp;€</div>
+          <div class="muted">/ jour — avr • juin • sept</div>
+        </div>
+        <div class="card">
+          <div class="muted">Vacances Zone B</div>
+          <div class="price">140&nbsp;€</div>
+          <div class="muted">/ jour</div>
+        </div>
+        <div class="card">
+          <div class="muted">Haute saison</div>
+          <div class="price">165&nbsp;€</div>
+          <div class="muted">/ jour — juil • août</div>
+        </div>
+      </div>
+      <p class="muted" style="margin-top:8px">
+        200&nbsp;km/jour inclus • 0,25&nbsp;€/km au-delà • Caution 2 500&nbsp;€ • Franchise 508&nbsp;€ (≤ 3 ans de permis : 1 016&nbsp;€) •
+        Minimum 2 nuits • Plein/plein — Non-fumeur — Animaux non acceptés.
+      </p>
+    </section>
 
-<section class="container">
-  <h2>Calendrier & disponibilités</h2>
-  <div class="calendar">
-    <!-- Remplace l’URL par l’iframe de ton Google Agenda (Public/Partager → Intégrer) -->
-    <iframe src="https://calendar.google.com/calendar/embed?src=en.french%23holiday%40group.v.calendar.google.com&ctz=Europe%2FParis"></iframe>
-  </div>
-</section>
-
-<section class="container contact">
-  <div class="box">
-    <h2>Contact & réservation</h2>
-    <p><strong>MATLOE</strong><br>Dunkerque & Côte d’Opale<br>
-      Tél. <a href="tel:+33600000000">06 00 00 00 00</a> — WhatsApp <a href="https://wa.me/33600000000" target="_blank" rel="noopener">cliquer ici</a><br>
-      Email <a href="mailto:ssamatloe@hotmail.com">ssamatloe@hotmail.com</a></p>
-    <p class="muted">Horaires flexibles (départs/retours). Caution 2 500 € – franchise 508 € (≥3 ans de permis : 1 016 €).  
-    Plein/plein, non-fumeur, animaux non acceptés.</p>
-  </div>
-  <div class="box">
-    <h2>Lieu</h2>
-    <p class="muted">Retrait à proximité de Dunkerque. Stationnement possible pour votre véhicule.</p>
-    <iframe
-      src="https://www.google.com/maps?q=Dunkerque&output=embed"
-      style="height:300px"></iframe>
-  </div>
-</section>
-
-<footer class="footer">
-  © MATLOE – Location de camping-car • Dunkerque — 2025
-</footer>
-
-</body>
-</html>
+    <!-- GALERIE -->
+    <section id="galerie">
+      <h2>Galerie</h2>
+      <p class="lead">Découvrez l’intérieur et l’extérieur du Glamys 322.</p>
+      <div class="gallery" style="margin-top:14px">
