@@ -6,21 +6,18 @@
   <title>MATLOE — Location de camping-car à Dunkerque (Glamys 322, 7 places)</title>
   <meta name="description" content="Location de camping-car à Dunkerque : Mc Louis Glamys 322, 7 places. 200 km/j inclus, assurance Groupama, attelage 2T, caméra de recul, porte 4 vélos, TV, GPS, plancha, équipement complet." />
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="MATLOE — Location de camping-car à Dunkerque" />
-  <meta property="og:description" content="Glamys 322 (7 places) — 200 km/j inclus, assurance Groupama, équipement complet. Demandez une dispo !" />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="/img/hero.jpg" />
-  <meta property="og:url" content="https://www.matloe.fr/" />
-
-  <!-- Favicon (facultatif) -->
+  <!-- Open Graph / SEO -->
+  <meta property="og:title" content="MATLOE — Location de camping-car à Dunkerque">
+  <meta property="og:description" content="Glamys 322 (7 places) — 200 km/j inclus, assurance Groupama, équipement complet. Demandez une dispo !">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://www.matloe.fr/img/hero.jpg">
+  <meta property="og:url" content="https://www.matloe.fr/">
   <link rel="icon" href="/img/logo-matloe.png" />
 
   <style>
     :root{
       --brand:#001220;        /* bleu très sombre */
-      --brand-2:#0f172a;      /* bleu ardoise */
-      --accent:#1463ff;       /* bleu action */
+      --accent:#1463ff;       /* bleu CTA */
       --muted:#6b7280;        /* gris */
       --bg:#f7fafc;           /* fond */
       --white:#fff;
@@ -29,7 +26,7 @@
     html,body{height:100%}
     body{
       margin:0;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Apple Color Emoji','Segoe UI Emoji';
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Apple Color Emoji","Segoe UI Emoji";
       color:#0b1220;
       background:var(--bg);
       line-height:1.45;
@@ -67,7 +64,7 @@
     .hero{
       position:relative; min-height:62vh; display:grid; place-items:center;
       color:#fff; text-align:center; isolation:isolate;
-      background:#0c1b2d url('img/hero.jpg') center/cover no-repeat fixed;
+      background:#0c1b2d url('/img/hero.jpg') center/cover no-repeat fixed;
     }
     .hero::after{
       content:""; position:absolute; inset:0; z-index:-1;
@@ -131,7 +128,7 @@
   <header>
     <div class="container header-bar">
       <div class="brand">
-        <img src="img/logo-matloe.png" alt="MATLOE" />
+        <img src="/img/logo-matloe.png" alt="MATLOE" />
         <b>MATLOE</b>
       </div>
       <nav>
@@ -215,3 +212,58 @@
       <h2>Galerie</h2>
       <p class="lead">Découvrez l’intérieur et l’extérieur du Glamys 322.</p>
       <div class="gallery" style="margin-top:14px">
+        <figure><img loading="lazy" src="/img/exterieur-plage-profil.jpg" alt="Profil extérieur sur la plage"><figcaption>Profil extérieur</figcaption></figure>
+        <figure><img loading="lazy" src="/img/exterieur-plage-arriere.jpg" alt="Arrière extérieur sur la plage"><figcaption>Arrière extérieur</figcaption></figure>
+        <figure><img loading="lazy" src="/img/exterieur-camping-auvent.jpg" alt="Auvent déployé en camping"><figcaption>Auvent déployé</figcaption></figure>
+        <figure><img loading="lazy" src="/img/interieur-vue-ensemble.jpg" alt="Vue d'ensemble intérieure"><figcaption>Intérieur — vue d’ensemble</figcaption></figure>
+        <figure><img loading="lazy" src="/img/dinette-preparee.jpg" alt="Dinette dressée"><figcaption>Dinette</figcaption></figure>
+        <figure><img loading="lazy" src="/img/lits-superposes.jpg" alt="Lits superposés"><figcaption>Lits superposés</figcaption></figure>
+        <figure><img loading="lazy" src="/img/lit-cabine.jpg" alt="Lit de cabine"><figcaption>Lit cabine</figcaption></figure>
+        <figure><img loading="lazy" src="/img/cuisine.jpg" alt="Espace cuisine"><figcaption>Cuisine</figcaption></figure>
+        <figure><img loading="lazy" src="/img/salle-de-bain.jpg" alt="Salle de bain"><figcaption>Salle de bain</figcaption></figure>
+        <figure><img loading="lazy" src="/img/cabine-tableau-bord.jpg" alt="Cabine et tableau de bord"><figcaption>Tableau de bord</figcaption></figure>
+        <figure><img loading="lazy" src="/img/plan-glamys322.webp" alt="Plan du Glamys 322"><figcaption>Plan d’implantation</figcaption></figure>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2>Contact & réservation</h2>
+      <div class="contact-box">
+        <div>
+          <p class="lead">Besoin d’un devis ou d’une dispo&nbsp;? Contactez-nous — réponse rapide 👇</p>
+          <p class="muted">Basé près de <b>Dunkerque</b> (59). Retrait souple selon disponibilités.</p>
+          <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:10px">
+            <a class="btn primary" href="https://wa.me/33621681482?text=Bonjour%20MATLOE%2C%20je%20souhaite%20r%C3%A9server%20le%20Glamys%20322">WhatsApp</a>
+            <a class="btn ghost"   href="tel:+33621681482">📞 +33&nbsp;6&nbsp;21&nbsp;68&nbsp;14&nbsp;82</a>
+            <a class="btn ghost"   href="mailto:contact@matloe.fr?subject=Demande%20de%20disponibilit%C3%A9%20Glamys%20322&body=Bonjour%2C%20je%20souhaite%20r%C3%A9server%20aux%20dates%20suivantes%20%3A%20">✉️ contact@matloe.fr</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="muted">Rappel</div>
+          <ul style="margin:6px 0 0 20px; padding:0">
+            <li>7 places carte grise — capucine</li>
+            <li>200&nbsp;km/j inclus (0,25&nbsp;€/km suppl.)</li>
+            <li>Attelage 2&nbsp;T — caméra de recul</li>
+            <li>TV + TNT — GPS Garmin Camper 795</li>
+            <li>Porte 4 vélos — plancha — tables & chaises</li>
+            <li>Ustensiles &amp; Nespresso — cales de niveau</li>
+            <li>Couverture pare-brise thermique</li>
+            <li>Assurance Groupama incluse</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container" style="display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap">
+      <div>© <span id="y"></span> MATLOE — Tous droits réservés.</div>
+      <div class="muted">Dunkerque & environs • France</div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
