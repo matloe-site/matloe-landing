@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>MATLOE – Location de camping-car à Dunkerque</title>
+  <meta name="description" content="Mc Louis Glamys 322 – 7 places. 200 km/j inclus, attelage 2T, caméra de recul, TV TNT, GPS Camper, porte-vélos 4, plancha, Nespresso. À partir de 100 €/jour.">
+  <link rel="icon" href="/img/logo-matloe.png">
+  <style>
+    :root{--navy:#00122a;--brand:#0f2e7a;--brand2:#194bd1;--bg:#f6f8fe;--muted:#58627a;--white:#fff}
+    *{box-sizing:border-box} html,body{height:100%} body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Arial;color:#0b1529;background:var(--bg)}
+    .container{width:min(1120px,92%);margin:0 auto}
+    .header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.9);backdrop-filter:blur(8px);border-bottom:1px solid #e8edfd}
+    .header__inner{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 0}
+    .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:inherit}
+    .logo{height:34px;width:auto;display:block} .brand__name{font-weight:900;letter-spacing:.4px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border-radius:12px;background:var(--brand);color:#fff;text-decoration:none;font-weight:800;box-shadow:0 10px 20px rgba(25,75,209,.2)}
+    .btn:hover{filter:brightness(1.05)} .btn--ghost{background:transparent;color:var(--brand);border:2px solid var(--brand)} .btn--ghost:hover{background:rgba(25,75,209,.06)}
+    .hero{min-height:64vh;display:flex;align-items:center;color:#fff;background-position:center;background-size:cover;background-image:
+      linear-gradient(180deg,rgba(0,18,42,.55),rgba(0,18,42,.55)), url('/img/hero.jpg');}
+    .overline{letter-spacing:.12em;text-transform:uppercase;opacity:.9;font-weight:800}
+    .hero__title{margin:.3rem 0 .6rem;font-size:clamp(30px,4.4vw,46px);line-height:1.04}
+    .hero__subtitle{margin:0 0 1rem;opacity:.95}
+    .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:10px}
+    .section{padding:56px 0} .section--alt{background:#fff}
+    .cards{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+    .card{background:#fff;border:1px solid #e8edfd;border-radius:14px;padding:16px}
+    .list{margin:0;padding-left:18px;color:#334}
+    .footer{padding:28px 0;background:#fff;border-top:1px solid #e8edfd;margin-top:24px}
+    .muted{color:#58627a}
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="#">
+        <img class="logo" src="/img/logo-matloe.png" alt="MATLOE">
+        <span class="brand__name">MATLOE</span>
+      </a>
+      <nav class="nav">
+        <a class="btn btn--ghost" href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <p class="overline">Location de camping-car à Dunkerque</p>
+      <h1 class="hero__title">Mc Louis Glamys 322 — 7 places</h1>
+      <p class="hero__subtitle">200 km/j inclus • Assurance Groupama • Attelage 2T • Véhicule récent & équipé</p>
+      <div class="cta">
+        <a class="btn" href="https://wa.me/33621681482" target="_blank" rel="noreferrer">Demander une dispo (WhatsApp)</a>
+        <a class="btn btn--ghost" href="tel:+33621681482">Appeler</a>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section class="section section--alt">
+      <div class="container">
+        <h2>Tarifs rapides</h2>
+        <div class="cards">
+          <div class="card"><strong>Basse saison</strong><br>100 € / jour<br><span class="muted">oct–mars</span></div>
+          <div class="card"><strong>Mi-saison</strong><br>110 € / jour<br><span class="muted">avr–juin & sept.</span></div>
+          <div class="card"><strong>Vacances Zone B</strong><br>140 € / jour</div>
+          <div class="card"><strong>Haute saison</strong><br>165 € / jour<br><span class="muted">juil–août</span></div>
+        </div>
+        <p class="muted">200 km/j inclus · 0,25 €/km sup. · Caution 2 500 € · Franchise 508 € (≤ 3 ans de permis : 1 016 €) · Minimum 2 nuits · Plein/plein · Non-fumeur · Animaux non acceptés.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact & réservation</h2>
+        <p class="list">
+          Tél. : <a href="tel:+33621681482">06 21 68 14 82</a><br>
+          Email : <a href="mailto:ssamatloe@hotmail.com">ssamatloe@hotmail.com</a><br>
+          Départ : Dunkerque — Téteghem-Coudekerque-Village
+        </p>
+        <div class="cta">
+          <a class="btn" href="https://wa.me/33621681482" target="_blank" rel="noreferrer">WhatsApp</a>
+          <a class="btn btn--ghost" href="sms:+33621681482">SMS</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container"><small>© <script>document.write(new Date().getFullYear())</script> MATLOE — SIRET 949 979 173</small></div>
+  </footer>
+</body>
+</html>
