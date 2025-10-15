@@ -4,64 +4,46 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="google-site-verification" content="s_OEoLJ1ANVY4P4Z1qzPU4nlGPIQIM3zhFilFKJpwCs" />
-
   <title>Location de camping-car à Dunkerque (Glamys 322, 7 places) – MATLOE</title>
-  <meta name="description" content="MATLOE loue un McLouis Glamys 322 (7 places) près de Dunkerque. 200 km/j inclus, assurance Groupama, attelage 2T, caméra de recul, TV, GPS, plancha, équipement complet. Demandez une dispo !" />
+  <meta name="description" content="MATLOE loue un Mc Louis Glamys 322 (7 places) près de Dunkerque. 200 km/j inclus, assurance Groupama, attelage 2T, caméra de recul, TV, GPS, plancha, équipement complet. Demandez une dispo !" />
+  <link rel="canonical" href="https://www.matloe.fr/" />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+  <meta name="theme-color" content="#001220" />
 
-  <!-- Canonical + hreflang -->
-  <link rel="canonical" href="https://www.matloe.fr/?lang=fr" />
+  <!-- hreflang -->
   <link rel="alternate" href="https://www.matloe.fr/?lang=fr" hreflang="fr" />
   <link rel="alternate" href="https://www.matloe.fr/?lang=en" hreflang="en" />
   <link rel="alternate" href="https://www.matloe.fr/?lang=nl" hreflang="nl" />
   <link rel="alternate" href="https://www.matloe.fr/" hreflang="x-default" />
 
-  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
-  <meta name="theme-color" content="#001220" />
-
-  <!-- Open Graph + Twitter -->
+  <!-- Open Graph -->
   <meta property="og:locale" content="fr_FR" />
-  <meta property="og:locale:alternate" content="en_GB" />
-  <meta property="og:locale:alternate" content="nl_NL" />
   <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="MATLOE" />
   <meta property="og:title" content="Location de camping-car à Dunkerque – Glamys 322 (7 places)" />
   <meta property="og:description" content="200 km/j inclus • Assurance Groupama • Attelage 2T • Véhicule récent & équipé. Demandez une dispo !" />
   <meta property="og:image" content="https://www.matloe.fr/img/hero.jpg" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta property="og:url" content="https://www.matloe.fr/?lang=fr" />
-
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Location de camping-car à Dunkerque – Glamys 322 (7 places)" />
-  <meta name="twitter:description" content="200 km/j inclus • Assurance Groupama • Attelage 2T • Véhicule récent & équipé." />
-  <meta name="twitter:image" content="https://www.matloe.fr/img/hero.jpg" />
-
-  <!-- Icons / PWA -->
-  <link rel="icon" href="/favicon.ico">
-  <link rel="apple-touch-icon" href="/img/icon-180.png">
-  <link rel="manifest" href="/site.webmanifest">
-
-  <!-- Preload LCP image -->
-  <link rel="preload" as="image" href="/img/hero.jpg" imagesizes="100vw" />
+  <meta property="og:url" content="https://www.matloe.fr/" />
 
   <style>
-    :root{ --brand:#001220; --accent:#0ea5e9; --muted:#64748b; --bg:#f8fafc; --ribbon:#0b7bb1; }
+    :root{
+      --brand:#001220; --accent:#0ea5e9; --muted:#64748b; --bg:#f8fafc;
+      --ribbon:#0b7bb1;
+    }
     *{box-sizing:border-box}
     body{margin:0; font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial; color:#0b1220; background:var(--bg)}
     img{max-width:100%; height:auto; display:block}
     a{color:var(--accent); text-decoration:none}
     a:hover{opacity:.9}
     .container{width:min(1120px,92vw); margin:0 auto; padding:0 0 56px}
-    .sr-only-focusable{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden}
-    .sr-only-focusable:focus{position:static;width:auto;height:auto;padding:8px;background:#fff;border:1px solid #cbd5e1;border-radius:8px}
 
     header{position:sticky; top:0; z-index:20; backdrop-filter:saturate(1.2) blur(6px);
       background:rgba(255,255,255,.85); border-bottom:1px solid #e5e7eb}
     .header-bar{display:flex; align-items:center; justify-content:space-between; padding:10px 0; gap:14px}
     .brand{display:flex; align-items:center; gap:10px}
-    .brand img{height:38px}
-    .brand b{font-weight:800; letter-spacing:.3px; color:var(--brand)}
-    nav[aria-label]{display:flex; gap:16px; flex-wrap:wrap}
+    /* LOGO AGRANDI */
+    .brand img{height:56px}
+    .brand b{font-weight:800; letter-spacing:.3px; color:var(--brand); font-size:18px}
+    nav{display:flex; gap:16px; flex-wrap:wrap}
     nav a{color:#334155; font-weight:600}
     nav a:hover{color:var(--accent)}
     .lang{display:flex; align-items:center; gap:6px}
@@ -70,14 +52,16 @@
     .btn.primary{background:var(--accent); color:#fff}
     .btn.ghost{border:1px solid #cbd5e1; color:#0b1220; background:#fff}
 
+    /* Promo hiver (ligne unique) */
     .promo{background:linear-gradient(90deg,var(--ribbon),#119ed8); color:#fff}
     .promo .wrap{display:flex; align-items:center; justify-content:center; gap:10px; padding:8px 12px; font-weight:700}
-    .promo small{opacity:.95; font-weight:600}
 
-    /* HERO with real <img> for LCP */
-    .hero{position:relative; min-height:58vh; display:grid; place-items:center; text-align:center; color:#fff; background:#000}
-    .hero>img{position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:0}
-    @media (max-width:900px){ .hero{min-height:56vh} }
+    /* HERO plein cadre */
+    .hero{
+      position:relative; min-height:58vh; display:grid; place-items:center; text-align:center; color:#fff;
+      background:#000 url('/img/hero.jpg') center/cover no-repeat;
+    }
+    @media (max-width:900px){ .hero{min-height:56vh; background-position:center 60%} }
     .hero::after{content:""; position:absolute; inset:0; background:linear-gradient(180deg,rgba(0,0,0,.35),rgba(0,0,0,.45))}
     .hero .wrap{position:relative; z-index:1; padding:42px 0}
     .kicker{display:inline-block; padding:6px 10px; border-radius:999px; background:rgba(255,255,255,.15); border:1px solid rgba(255,255,255,.4)}
@@ -96,7 +80,6 @@
 
     .gallery{display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:10px}
     .gallery figure{margin:0}
-    .gallery img{border-radius:12px; aspect-ratio:3/2; object-fit:cover}
     .gallery figcaption{font-size:14px; color:#475569; margin-top:6px}
 
     .logos{display:flex; flex-wrap:wrap; gap:12px; align-items:center}
@@ -104,19 +87,18 @@
     .logo-link img{width:20px; height:20px; border-radius:4px}
 
     .grid-2{display:grid; grid-template-columns:1.1fr .9fr; gap:24px}
-    @media (max-width:920px){ .grid-2{grid-template-columns:1fr} }
+    @media (max-width:920px){ .grid-2{grid-template-columns:1fr} .hero{background-attachment:scroll} }
 
     iframe.map{width:100%; height:320px; border:0; border-radius:12px}
     footer{border-top:1px solid #e5e7eb; padding:32px 0; color:#475569}
   </style>
 
-  <!-- JSON-LD Product + Offer (numbers) -->
+  <!-- JSON-LD Product + Offer -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
     "@type":"Product",
-    "@id":"https://www.matloe.fr/#product",
-    "name":"Location camping-car Dunkerque – McLouis Glamys 322",
+    "name":"Location camping-car Dunkerque – Mc Louis Glamys 322",
     "brand":{"@type":"Brand","name":"McLouis"},
     "model":"Glamys 322",
     "sku":"GLAMYS-322",
@@ -125,30 +107,11 @@
     "offers":{
       "@type":"AggregateOffer",
       "priceCurrency":"EUR",
-      "lowPrice":100,
-      "highPrice":165,
-      "url":"https://www.matloe.fr/?lang=fr",
+      "lowPrice":"100",
+      "highPrice":"165",
+      "url":"https://www.matloe.fr/",
       "availability":"https://schema.org/InStock"
     }
-  }
-  </script>
-
-  <!-- JSON-LD Organization -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"Organization",
-    "@id":"https://www.matloe.fr/#org",
-    "name":"MATLOE",
-    "url":"https://www.matloe.fr/",
-    "logo":"https://www.matloe.fr/img/logo-matloe.png",
-    "sameAs":[
-      "https://www.facebook.com/profile.php?id=61580671122784",
-      "https://www.yescapa.fr/campers/95984",
-      "https://www.wikicampers.fr/location/capucine/teteghem-coudekerque-village/fiat-mc-louis-glamys/135799"
-    ],
-    "address":{"@type":"PostalAddress","streetAddress":"14 Rue des Amandiers","addressLocality":"Téteghem-Coudekerque-Village","postalCode":"59380","addressCountry":"FR"},
-    "telephone":"+33621681482"
   }
   </script>
 
@@ -181,27 +144,26 @@
   </script>
 </head>
 <body>
-  <a href="#main" class="sr-only-focusable">Aller au contenu</a>
 
-  <!-- Ruban PROMO -->
+  <!-- Ruban PROMO (ligne unique) -->
   <div class="promo" role="note" aria-label="Promotion hiver">
     <div class="container wrap">
       ❄️ <span data-i18n="promo_hiver">Pneus 4 saisons + chaînes fournies — prêt pour vos vacances d’hiver à la montagne !</span>
-      <small data-i18n="promo_prec">Chaînes fournies (non montées) — selon réglementation.</small>
     </div>
   </div>
 
   <header>
     <div class="container header-bar">
       <div class="brand">
-        <img src="/img/logo-matloe.png" alt="MATLOE" />
+        <img src="/img/logo-matloe.png" alt="MATLOE" width="56" height="56" loading="eager" />
         <b>MATLOE</b>
       </div>
-      <nav aria-label="Navigation principale">
+      <nav>
         <a href="#atouts" data-i18n="nav_atouts">Atouts</a>
         <a href="#tarifs" data-i18n="nav_tarifs">Tarifs</a>
         <a href="#galerie" data-i18n="nav_galerie">Galerie</a>
         <a href="#plateformes" data-i18n="nav_plateformes">Plateformes</a>
+        <a href="#idees" data-i18n="nav_idees">Itinéraires</a>
         <a href="#faq" data-i18n="nav_faq">FAQ</a>
         <a href="#contact" data-i18n="nav_contact">Contact</a>
         <a href="/blog/itineraire-camping-car-dunkerque-bruges-damme-3-jours.html" data-i18n="nav_blog">Blog</a>
@@ -218,20 +180,19 @@
   </header>
 
   <!-- HERO -->
-  <section class="hero" aria-labelledby="hero-title">
-    <img src="/img/hero.jpg" alt="" fetchpriority="high" loading="eager" decoding="async" />
+  <section class="hero" role="img" aria-label="Camping-car Glamys 322 au bord de mer">
     <div class="container wrap">
       <span class="kicker" data-i18n="hero_kicker">Location de camping-car à Dunkerque</span>
-      <h1 id="hero-title" data-i18n="hero_title">Mc Louis Glamys 322 — <b>7 places</b></h1>
+      <h1 data-i18n="hero_title">Mc Louis Glamys 322 — <b>7 places</b></h1>
       <p class="sub" data-i18n="hero_sub">200 km/j inclus • Assurance Groupama • Attelage <b>2&nbsp;tonnes</b> • Véhicule récent &amp; équipé</p>
       <div class="cta">
-        <a class="btn primary" aria-label="Demander une disponibilité sur WhatsApp" data-i18n="cta_whatsapp" href="https://wa.me/33621681482?text=Bonjour%20MATLOE%2C%20je%20souhaite%20r%C3%A9server%20le%20Glamys%20322" target="_blank" rel="noopener">Demander une dispo (WhatsApp)</a>
-        <a class="btn ghost" aria-label="Appeler MATLOE" data-i18n="cta_call" href="tel:+33621681482">Appeler</a>
+        <a class="btn primary" data-i18n="cta_whatsapp" href="https://wa.me/33621681482?text=Bonjour%20MATLOE%2C%20je%20souhaite%20r%C3%A9server%20le%20Glamys%20322" target="_blank" rel="noopener">Demander une dispo (WhatsApp)</a>
+        <a class="btn ghost" data-i18n="cta_call" href="tel:+33621681482">Appeler</a>
       </div>
     </div>
   </section>
 
-  <main id="main" class="container">
+  <main class="container">
 
     <!-- ATOUTS -->
     <section id="atouts">
@@ -274,17 +235,14 @@
       <h2 data-i18n="h_galerie">Galerie</h2>
       <p class="lead" data-i18n="galerie_lead">Découvrez l’intérieur et l’extérieur du Glamys 322.</p>
       <div class="gallery" style="margin-top:14px">
-        <figure><img src="/img/exterieur-plage-profil.jpg" alt="Glamys 322 – profil extérieur" loading="lazy" decoding="async"><figcaption data-i18n="g_profil">Profil extérieur</figcaption></figure>
-        <figure><img src="/img/exterieur-plage-arriere.jpg" alt="Glamys 322 – arrière extérieur" loading="lazy" decoding="async"><figcaption data-i18n="g_arriere">Arrière extérieur</figcaption></figure>
+        <figure><img src="/img/exterieur-plage-profil.jpg" alt="Glamys 322 – profil extérieur sur la plage" loading="lazy" decoding="async"><figcaption data-i18n="g_profil">Profil extérieur</figcaption></figure>
+        <figure><img src="/img/exterieur-plage-arriere.jpg" alt="Glamys 322 – arrière extérieur sur la plage" loading="lazy" decoding="async"><figcaption data-i18n="g_arriere">Arrière extérieur</figcaption></figure>
         <figure><img src="/img/exterieur-camping-auvent.jpg" alt="Glamys 322 – auvent déployé au camping" loading="lazy" decoding="async"><figcaption data-i18n="g_auvent">Auvent déployé</figcaption></figure>
         <figure><img src="/img/interieur-vue-ensemble.jpg" alt="Intérieur du Glamys 322 – vue d’ensemble" loading="lazy" decoding="async"><figcaption data-i18n="g_inside">Intérieur — vue d’ensemble</figcaption></figure>
-        <figure><img src="/img/cabine-tableau-bord.jpg" alt="Poste de conduite" loading="lazy" decoding="async"><figcaption>Tableau de bord</figcaption></figure>
         <figure><img src="/img/cuisine.jpg" alt="Cuisine du camping-car" loading="lazy" decoding="async"><figcaption>Cuisine</figcaption></figure>
         <figure><img src="/img/dinette-preparee.jpg" alt="Dinette du Glamys 322 dressée" loading="lazy" decoding="async"><figcaption>Dinette</figcaption></figure>
         <figure><img src="/img/lits-superposes.jpg" alt="Lits superposés du camping-car" loading="lazy" decoding="async"><figcaption>Lits superposés</figcaption></figure>
         <figure><img src="/img/lit-cabine.jpg" alt="Grand lit de capucine" loading="lazy" decoding="async"><figcaption>Lit cabine</figcaption></figure>
-        <figure><img src="/img/salle-de-bain.jpg" alt="Salle de bain du camping-car" loading="lazy" decoding="async"><figcaption>Salle de bain</figcaption></figure>
-        <figure><img src="/img/plan-glamys322.webp" alt="Plan du Glamys 322" loading="lazy" decoding="async"><figcaption>Plan d’implantation</figcaption></figure>
       </div>
     </section>
 
@@ -297,7 +255,7 @@
         <a class="logo-link" href="https://www.yescapa.fr/campers/95984" target="_blank" rel="nofollow noopener">
           <img src="https://www.google.com/s2/favicons?domain=www.yescapa.fr&sz=64" alt="Yescapa" /> Yescapa
         </a>
-        <a class="logo-link" href="https://www.wikicampers.fr/location/capucine/teteghem-coudekerque-village/fiat-mc-louis-glamys/135799" target="_blank" rel="nofollow noopener">
+        <a class="logo-link" href="https://www.wikicampers.fr/location/capucine/teteghem-coudekerque-village/fiat-mc-louis-glamys/135799?preview=1" target="_blank" rel="nofollow noopener">
           <img src="https://www.google.com/s2/favicons?domain=www.wikicampers.fr&sz=64" alt="Wikicampers" /> Wikicampers
         </a>
         <a class="logo-link" href="https://www.leboncoin.fr/ad/locations_saisonnieres/3013735739" target="_blank" rel="nofollow noopener">
@@ -323,6 +281,24 @@
                target="_blank" rel="noopener" data-i18n="maps_btn">Ouvrir dans Google Maps</a>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- IDEES D’ITINERAIRES -->
+    <section id="idees">
+      <h2 data-i18n="h_idees">Idées d’itinéraires autour de Dunkerque</h2>
+      <div class="cards" style="margin-top:10px">
+        <a class="card" style="display:block" href="/blog/itineraire-camping-car-dunkerque-bruges-damme-3-jours.html">
+          <img src="/img/30-carte-dunkerque-bruges.jpg" alt="Boucle 3 jours : Dunkerque, Bruges, Damme" loading="lazy" decoding="async" />
+          <b data-i18n="idee1_title">3 jours : Dunkerque → Bruges → Damme</b>
+          <div class="muted" data-i18n="idee1_desc">Carte, Park4Night & activités. Villes flamandes + côte.</div>
+        </a>
+
+        <a class="card" style="display:block" href="/blog/itineraire-camping-car-flandres-bergues-veurne-diksmuide-2-jours.html">
+          <img src="/img/24-beffroi-bergues.webp" alt="Boucle Flandres : Bergues, Veurne, Diksmuide, Lo, Nieuwpoort" loading="lazy" decoding="async" />
+          <b data-i18n="idee2_title">2 jours : Bergues • Veurne • Diksmuide • Lo • Nieuwpoort</b>
+          <div class="muted" data-i18n="idee2_desc">Remparts, beffrois UNESCO, mémoire 14-18 & bord de mer.</div>
+        </a>
       </div>
     </section>
 
@@ -380,21 +356,11 @@
   <!-- i18n FR/EN/NL -->
   <script>
     document.getElementById('y').textContent=new Date().getFullYear();
-
-    function setCanonOg(lang){
-      const url = `https://www.matloe.fr/?lang=${lang}`;
-      const canon = document.querySelector('link[rel="canonical"]');
-      const ogurl = document.querySelector('meta[property="og:url"]');
-      if (canon) canon.setAttribute('href', url);
-      if (ogurl) ogurl.setAttribute('content', url);
-    }
-
     const i18n = {
       fr:{meta_title:"Location de camping-car à Dunkerque (Glamys 322, 7 places) – MATLOE",
-        meta_desc:"MATLOE loue un McLouis Glamys 322 (7 places) près de Dunkerque. 200 km/j inclus, assurance Groupama, attelage 2T, caméra de recul, TV, GPS, plancha, équipement complet. Demandez une dispo !",
+        meta_desc:"MATLOE loue un Mc Louis Glamys 322 (7 places) près de Dunkerque. 200 km/j inclus, assurance Groupama, attelage 2T, caméra de recul, TV, GPS, plancha, équipement complet. Demandez une dispo !",
         promo_hiver:"Pneus 4 saisons + chaînes fournies — prêt pour vos vacances d’hiver à la montagne !",
-        promo_prec:"Chaînes fournies (non montées) — selon réglementation.",
-        nav_atouts:"Atouts", nav_tarifs:"Tarifs", nav_galerie:"Galerie", nav_plateformes:"Plateformes", nav_faq:"FAQ", nav_contact:"Contact", nav_blog:"Blog",
+        nav_atouts:"Atouts", nav_tarifs:"Tarifs", nav_galerie:"Galerie", nav_plateformes:"Plateformes", nav_idees:"Itinéraires", nav_faq:"FAQ", nav_contact:"Contact", nav_blog:"Blog",
         hero_kicker:"Location de camping-car à Dunkerque", hero_title:"Mc Louis Glamys 322 — <b>7 places</b>", hero_sub:"200 km/j inclus • Assurance Groupama • Attelage <b>2&nbsp;tonnes</b> • Véhicule récent &amp; équipé",
         cta_whatsapp:"Demander une dispo (WhatsApp)", cta_call:"Appeler",
         h_atouts:"Points forts & équipements", atouts_lead:"Tout est prêt pour partir sereinement : sécurité, confort et accessoires pensés pour les familles et les séjours nomades.",
@@ -408,6 +374,11 @@
         t_high:"Haute saison", t_high_d:"/ jour — juil • août", tarifs_note:"200 km/jour inclus • 0,25 €/km au-delà • Caution 2 500 € • Franchise 508 € (≤ 3 ans de permis : 1 016 €) • Minimum 2 nuits • Plein/plein — Non-fumeur — Animaux non acceptés.",
         h_galerie:"Galerie", galerie_lead:"Découvrez l’intérieur et l’extérieur du Glamys 322.", g_profil:"Profil extérieur", g_arriere:"Arrière extérieur", g_auvent:"Auvent déployé", g_inside:"Intérieur — vue d’ensemble",
         h_plateformes:"Réserver aussi sur", plateformes_lead:"Vous préférez réserver via une plateforme ? C’est possible 👇", cta_book:"Demander une réservation", maps_note:"Retrait proche de Dunkerque. Cliquez sur la carte pour l’itinéraire.", maps_btn:"Ouvrir dans Google Maps",
+        h_idees:"Idées d’itinéraires autour de Dunkerque",
+        idee1_title:"3 jours : Dunkerque → Bruges → Damme",
+        idee1_desc:"Carte, Park4Night & activités. Villes flamandes + côte.",
+        idee2_title:"2 jours : Bergues • Veurne • Diksmuide • Lo • Nieuwpoort",
+        idee2_desc:"Remparts, beffrois UNESCO, mémoire 14-18 & bord de mer.",
         h_faq:"Questions fréquentes", faq_lead:"Tout ce qu’il faut savoir avant de réserver votre Glamys 322.",
         q_km:"Quel est le kilométrage inclus ?", a_km:"200 km/jour sont inclus. Au-delà, 0,25 €/km.",
         q_caution:"Quel dépôt de garantie ?", a_caution:"Une caution de 2 500 € est demandée. Franchise 508 € (≤ 3 ans de permis : 1 016 €).",
@@ -421,10 +392,9 @@
         rights:"Tous droits réservés.", foot_city:"Dunkerque & environs • France"
       },
       en:{meta_title:"Motorhome rental in Dunkirk (Glamys 322, 7 berth) – MATLOE",
-        meta_desc:"MATLOE rents a McLouis Glamys 322 (7 berth) near Dunkirk. 200 km/day included, Groupama insurance, 2T tow bar, rear camera, TV, GPS, plancha, full equipment. Ask availability!",
+        meta_desc:"MATLOE rents a Mc Louis Glamys 322 (7 berth) near Dunkirk. 200 km/day included, Groupama insurance, 2T tow bar, rear camera, TV, GPS, plancha, full equipment. Ask availability!",
         promo_hiver:"All-season tyres + snow chains provided — ready for your winter mountain holidays!",
-        promo_prec:"Chains provided (not mounted) — follow local rules.",
-        nav_atouts:"Highlights", nav_tarifs:"Rates", nav_galerie:"Gallery", nav_plateformes:"Platforms", nav_faq:"FAQ", nav_contact:"Contact", nav_blog:"Blog",
+        nav_atouts:"Highlights", nav_tarifs:"Rates", nav_galerie:"Gallery", nav_plateformes:"Platforms", nav_idees:"Routes", nav_faq:"FAQ", nav_contact:"Contact", nav_blog:"Blog",
         hero_kicker:"Motorhome rental in Dunkirk", hero_title:"Mc Louis Glamys 322 — <b>7 berth</b>", hero_sub:"200 km/day included • Groupama insurance • <b>2-ton</b> tow bar • Recent & equipped vehicle",
         cta_whatsapp:"Ask availability (WhatsApp)", cta_call:"Call",
         h_atouts:"Highlights & equipment", atouts_lead:"Everything is ready for a smooth trip: safety, comfort, and accessories for families and nomads.",
@@ -438,77 +408,14 @@
         t_high:"High season", t_high_d:"/ day — Jul • Aug", tarifs_note:"200 km/day included • €0.25/km extra • €2,500 deposit • €508 excess (≤3 years license: €1,016) • Min 2 nights • Full-to-full — no smoking — no pets.",
         h_galerie:"Gallery", galerie_lead:"Discover the Glamys 322 inside & out.", g_profil:"Side profile", g_arriere:"Rear view", g_auvent:"Awning out", g_inside:"Interior — overview",
         h_plateformes:"Also book on", plateformes_lead:"Prefer booking via a platform? No problem 👇", cta_book:"Request a booking", maps_note:"Pickup near Dunkirk. Click the map for directions.", maps_btn:"Open in Google Maps",
+        h_idees:"Route ideas around Dunkirk",
+        idee1_title:"3 days: Dunkirk → Bruges → Damme",
+        idee1_desc:"Map, Park4Night & activities. Flemish towns + coast.",
+        idee2_title:"2 days: Bergues • Veurne • Diksmuide • Lo • Nieuwpoort",
+        idee2_desc:"Ramparts, UNESCO belfries, WWI memory & seaside.",
         h_faq:"Frequently asked questions", faq_lead:"All you need before booking.",
         q_km:"How many kilometres are included?", a_km:"200 km/day included. Extra: €0.25/km.",
         q_caution:"Security deposit?", a_caution:"€2,500 deposit. Excess €508 (≤3 years license: €1,016).",
         q_animaux:"Pets allowed?", a_animaux:"No, for hygiene reasons.",
-        q_equip:"What equipment is included?", a_equip:"2-ton tow bar, rear camera, TV+DTT, Camper 795 GPS, 4-bike rack, plancha, table & chairs, utensils & Nespresso, levelling ramps, thermal windscreen cover…",
-        h_contact:"Contact & booking", contact_lead:"Need a quote or availability? Get in touch — fast reply 👇", contact_city:"Based near <b>Dunkirk</b> (59). Flexible pickup.",
-        contact_whatsapp:"WhatsApp", rappel:"Reminder",
-        r1:"7 seatbelts — cab-over", r2:"200 km/day (then €0.25/km)", r3:"2-ton tow bar — rear camera", r4:"Cab A/C — Truma heating",
-        r5:"Awning — mosquito nets & blinds", r6:"TV + DTT — Garmin Camper 795", r7:"4-bike rack — plancha — table & chairs",
-        r8:"Utensils & Nespresso — levelling ramps", r9:"Thermal windscreen cover", r10:"Groupama insurance included",
-        rights:"All rights reserved.", foot_city:"Dunkirk & area • France"
-      },
-      nl:{meta_title:"Camper verhuur in Duinkerke (Glamys 322, 7 plaatsen) – MATLOE",
-        meta_desc:"MATLOE verhuurt een McLouis Glamys 322 (7 plaatsen) nabij Duinkerke. 200 km/dag inbegrepen, Groupama-verzekering, trekhaak 2T, achteruitrijcamera, TV, GPS, plancha, volledig uitgerust.",
-        promo_hiver:"All-season banden + sneeuwkettingen meegeleverd — klaar voor uw wintersport!",
-        promo_prec:"Kettingen meegeleverd (niet gemonteerd) — volgens de regels.",
-        nav_atouts:"Pluspunten", nav_tarifs:"Tarieven", nav_galerie:"Galerij", nav_plateformes:"Platforms", nav_faq:"FAQ", nav_contact:"Contact", nav_blog:"Blog",
-        hero_kicker:"Camperverhuur in Duinkerke", hero_title:"Mc Louis Glamys 322 — <b>7 plaatsen</b>", hero_sub:"200 km/dag inbegrepen • Groupama verzekering • <b>2-ton</b> trekhaak • Recente en uitgeruste wagen",
-        cta_whatsapp:"Beschikbaarheid (WhatsApp)", cta_call:"Bellen",
-        h_atouts:"Pluspunten & uitrusting", atouts_lead:"Alles klaar voor een zorgeloze trip: veiligheid, comfort en accessoires.",
-        a_attelage_t:"Trekhaak 2 T", a_attelage_d:"Ideaal om te trekken.", a_camera_t:"Achteruitrijcamera", a_camera_d:"Makkelijk manoeuvreren.",
-        a_gps_t:"Garmin Camper 795 GPS", a_gps_d:"Campervriendelijke routes.", a_tv_t:"Smart TV + DVB-T", a_tv_d:"Entertainment aan boord.",
-        a_plancha_t:"Plancha + 2 gasflessen", a_plancha_d:"Heerlijk buiten koken.", a_table_t:"Tafel & stoelen", a_table_d:"Buitenlounge.",
-        a_cales_t:"Nivelleerblokken", a_cales_d:"Altijd vlak.", a_clim_t:"Airco cabine", a_clim_d:"Comfort in de zomer.",
-        a_truma_t:"Truma verwarming", a_truma_d:"Warm in elk seizoen.", a_moust_t:"Muggengaas + rolgordijnen", a_moust_d:"Op elke opening.",
-        a_assur_t:"Groupama verzekering", a_assur_d:"Inbegrepen.", a_chain_t:"Sneeuwkettingen meegeleverd", a_chain_d:"Klaar voor wintersport (niet gemonteerd).",
-        h_tarifs:"Snelle tarieven", t_low:"Laagseizoen", t_low_d:"/ dag — okt • mrt", t_mid:"Middenseizoen", t_mid_d:"/ dag — apr • jun • sep", t_zoneb:"Vakanties Zone B",
-        t_high:"Hoogseizoen", t_high_d:"/ dag — jul • aug", tarifs_note:"200 km/dag inbegrepen • €0,25/km extra • Borg €2.500 • Eigen risico €508 (≤3 jaar rijbewijs: €1.016) • Min 2 nachten • Vol/vol — niet-rokers — geen huisdieren.",
-        h_galerie:"Galerij", galerie_lead:"Ontdek de Glamys 322.", g_profil:"Zijaanzicht", g_arriere:"Achteraanzicht", g_auvent:"Luifel uit", g_inside:"Interieur — overzicht",
-        h_plateformes:"Boek ook via", plateformes_lead:"Liever via een platform boeken? Kan 👇", cta_book:"Boeking aanvragen", maps_note:"Ophalen nabij Duinkerke. Klik op de kaart voor de route.", maps_btn:"Openen in Google Maps",
-        h_faq:"Veelgestelde vragen", faq_lead:"Alles wat u moet weten voor het boeken.",
-        q_km:"Hoeveel kilometers inbegrepen?", a_km:"200 km/dag inbegrepen. Extra: €0,25/km.",
-        q_caution:"Waarborg?", a_caution:"Waarborg €2.500. Eigen risico €508 (≤3 jaar rijbewijs: €1.016).",
-        q_animaux:"Huisdieren toegelaten?", a_animaux:"Nee, om hygiënische redenen.",
-        q_equip:"Welke uitrusting is inbegrepen?", a_equip:"Trekhaak 2 T, achteruitrijcamera, TV+DVB-T, Camper 795 GPS, fietsenrek (4), plancha, tafel & stoelen, keukenset & Nespresso, nivelleerblokken, thermische voorruitcover…",
-        h_contact:"Contact & reservatie", contact_lead:"Offerte of beschikbaarheid? Contacteer ons — snel antwoord 👇", contact_city:"Gebaseerd nabij <b>Duinkerke</b> (59). Flexibel afhalen.",
-        contact_whatsapp:"WhatsApp", rappel:"Samenvatting",
-        r1:"7 zitplaatsen — alkoof", r2:"200 km/dag (dan €0,25/km)", r3:"Trekhaak 2 T — achteruitrijcamera", r4:"Airco cabine — Truma verwarming",
-        r5:"Luifel — muggengaas & rolgordijnen", r6:"TV + DVB-T — Garmin Camper 795", r7:"Fietsenrek (4) — plancha — tafel & stoelen",
-        r8:"Keukenset & Nespresso — nivelleerblokken", r9:"Thermische voorruitcover", r10:"Groupama verzekering inbegrepen",
-        rights:"Alle rechten voorbehouden.", foot_city:"Duinkerke & omgeving • Frankrijk"
-      }
-    };
+        q_equip:"What equipment is included?", a_equip:"2-ton tow bar, rear camera, TV+DTT, Camper 795 GPS, 4-bike rack, plancha,
 
-    function applyLang(lang){
-      const dict = i18n[lang] || i18n.fr;
-      document.documentElement.lang = lang;
-      const t = document.querySelector('title'); if (t && dict.meta_title) t.textContent = dict.meta_title;
-      const d = document.querySelector('meta[name="description"]'); if (d && dict.meta_desc) d.setAttribute('content', dict.meta_desc);
-      document.querySelectorAll('[data-i18n]').forEach(el=>{
-        const key = el.getAttribute('data-i18n'); if (dict[key]) el.innerHTML = dict[key];
-      });
-      setCanonOg(lang);
-    }
-
-    (function(){
-      const params = new URLSearchParams(location.search);
-      const lang = params.get('lang') || localStorage.getItem('lang') || 'fr';
-      document.getElementById('lang').value = lang; applyLang(lang);
-      document.getElementById('lang').addEventListener('change', (e)=>{
-        const l = e.target.value; localStorage.setItem('lang', l);
-        const url = new URL(location.href); url.searchParams.set('lang', l);
-        window.history.replaceState({}, '', url); applyLang(l);
-      });
-    })();
-  </script>
-
-  <noscript>
-    <div style="padding:10px; background:#fff3cd; border-top:1px solid #facc15; text-align:center">
-      Ce site propose une traduction FR/EN/NL. Activez JavaScript pour changer de langue.
-    </div>
-  </noscript>
-</body>
-</html>
