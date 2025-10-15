@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Itinéraire camping-car 2 jours : Bergues → Veurne → Diksmuide → Lo → Nieuwpoort – MATLOE</title>
+  <meta name="description" content="Boucle facile au départ de Dunkerque : Bergues, Veurne, Diksmuide (Tour de l’Yser), Lo et Nieuwpoort (monument Albert Iᵉʳ). Carte interactive, Park4Night et idées d’activités." />
+  <link rel="canonical" href="https://www.matloe.fr/blog/itineraire-camping-car-flandres-bergues-veurne-diksmuide-2-jours.html?lang=fr" />
+  <link rel="alternate" href="https://www.matloe.fr/blog/itineraire-camping-car-flandres-bergues-veurne-diksmuide-2-jours.html?lang=fr" hreflang="fr">
+  <link rel="alternate" href="https://www.matloe.fr/blog/itineraire-camping-car-flandres-bergues-veurne-diksmuide-2-jours.html?lang=en" hreflang="en">
+  <link rel="alternate" href="https://www.matloe.fr/blog/itineraire-camping-car-flandres-bergues-veurne-diksmuide-2-jours.html?lang=nl" hreflang="nl">
+  <link rel="alternate" href="https://www.matloe.fr/blog/itineraire-camping-car-flandres-bergues-veurne-diksmuide-2-jours.html" hreflang="x-default">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+  <link rel="icon" href="/img/logo-matloe.png" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="MATLOE" />
+  <meta property="og:title" content="Itinéraire camping-car 2 jours : Bergues → Veurne → Diksmuide → Lo → Nieuwpoort" />
+  <meta property="og:description" content="Boucle Flandres : carte interactive, Park4Night et idées d’activités." />
+  <meta property="og:image" content="https://www.matloe.fr/img/24-beffroi-bergues.webp" />
+  <meta property="og:url" content="https://www.matloe.fr/blog/itineraire-camping-car-flandres-bergues-veurne-diksmuide-2-jours.html?lang=fr" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <!-- Leaflet (OSM) -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <style>
+    :root{ --brand:#0b1220; --accent:#0e7490; --muted:#475569; --line:#e5e7eb; --bg:#f8fafc; }
+    *{box-sizing:border-box}
+    body{margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial; color:#0b1220; background:var(--bg)}
+    img{max-width:100%; height:auto; display:block; border-radius:12px}
+    a{color:var(--accent); text-decoration:none}
+    a:hover{opacity:.9}
+    .container{width:min(1100px,92vw); margin:0 auto; padding:0 0 40px}
+    header{position:sticky; top:0; z-index:20; background:rgba(255,255,255,.9); backdrop-filter:saturate(1.2) blur(6px); border-bottom:1px solid var(--line)}
+    .bar{display:flex; align-items:center; justify-content:space-between; gap:14px; padding:10px 0}
+    nav[aria-label]{display:flex; gap:14px; flex-wrap:wrap}
+    .btn{display:inline-block; padding:10px 16px; border-radius:10px; font-weight:700}
+    .btn.ghost{border:1px solid var(--line); background:#fff}
+    .btn.primary{background:var(--accent); color:#fff}
+    .kicker{text-transform:uppercase; letter-spacing:.08em; color:#0e7490; font-weight:800; font-size:12px}
+    h1{font-size: clamp(26px,4vw,40px); margin:.4rem 0 1rem}
+    h2{font-size: clamp(22px,3.4vw,30px); margin:1.4rem 0 .6rem}
+    h3{font-size: clamp(18px,2.6vw,22px); margin:1rem 0 .4rem}
+    .lead{color:var(--muted); max-width:850px}
+    .section{padding:22px 0; border-top:1px solid var(--line)}
+    .grid-2{display:grid; grid-template-columns:1.05fr .95fr; gap:22px}
+    @media (max-width:920px){ .grid-2{grid-template-columns:1fr} }
+    .gallery{display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:10px}
+    .gallery figure{margin:0}
+    .gallery img{aspect-ratio:3/2; object-fit:cover}
+    .gallery figcaption{font-size:14px; color:#475569; margin-top:6px}
+    .card{background:#fff; border:1px solid var(--line); border-radius:12px; padding:14px}
+    .pillgrid{display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:10px}
+    #map{width:100%; height:360px; border-radius:12px}
+    footer{border-top:1px solid var(--line); padding:26px 0; color:#475569}
+    select{padding:6px 8px; border-radius:8px; border:1px solid #cbd5e1; background:#fff; color:#0b1220}
+  </style>
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BlogPosting",
+   "mainEntityOfPage":{"@type":"WebPage","@id":"https://www.matloe.fr/blog/itineraire-camping-car-flandres-bergues-veurne-diksmuide-2-jours.html"},
+   "headline":"Itinéraire camping-car 2 jours : Bergues → Veurne → Diksmuide → Lo → Nieuwpoort",
+   "description":"Boucle Flandres au départ de Dunkerque, avec Park4Night, activités et carte.",
+   "image":["https://www.matloe.fr/img/24-beffroi-bergues.webp"],
+   "author":{"@type":"Organization","name":"MATLOE"},
+   "publisher":{"@type":"Organization","name":"MATLOE","logo":{"@type":"ImageObject","url":"https://www.matloe.fr/img/logo-matloe.png"}}}
+  </script>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="container bar">
+      <div class="brand" style="display:flex;align-items:center;gap:10px">
+        <img src="/img/logo-matloe.png" alt="MATLOE" width="40" height="40" />
+        <b>MATLOE</b>
+      </div>
+      <nav aria-label="Navigation principale">
+        <a href="/#atouts" data-i18n="nav_home">Accueil</a>
+        <a href="/#galerie" data-i18n="nav_gallery">Galerie</a>
+        <a href="/#contact" data-i18n="nav_contact">Contact</a>
+      </nav>
+      <div class="lang">
+        <label for="lang">🌍</label>
+        <select id="lang" aria-label="Language"><option value="fr">FR</option><option value="en">EN</option><option value="nl">NL</option></select>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- HERO -->
+    <section class="section" style="padding-top:18px">
+      <span class="kicker" data-i18n="hero_kicker">Blog • Itinéraires</span>
+      <h1 data-i18n="hero_title">2 jours dans les Flandres : Bergues → Veurne → Diksmuide → Lo → Nieuwpoort</h1>
+      <p class="lead" data-i18n="hero_lead">
+        Une escapade courte au départ de Dunkerque, parfaite avec enfants : villes fortifiées, beffrois UNESCO, mémoire 14-18 et bord de mer. Retrouvez la carte, Park4Night et nos idées d’activités.
+      </p>
+      <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:10px">
+        <a class="btn primary" href="https://wa.me/33621681482?text=Bonjour%20MATLOE%2C%20je%20veux%20des%20infos%20sur%20la%20boucle%20Flandres%202%20jours" target="_blank" rel="noopener" data-i18n="cta_whatsapp">Nous poser une question (WhatsApp)</a>
+        <a class="btn ghost" href="https://www.google.com/maps/dir/Dunkerque/Bergues/Veurne/Diksmuide/Lo/Monument+Albert+I+Nieuwpoort/Dunkerque" target="_blank" rel="noopener" data-i18n="cta_map">Ouvrir la carte Google</a>
+      </div>
+    </section>
+
+    <!-- MAP -->
+    <section class="section">
+      <h2 data-i18n="map_title">Carte de l’itinéraire</h2>
+      <div class="grid-2">
+        <div id="map" role="region" aria-label="Carte de la boucle Flandres"></div>
+        <div class="card">
+          <p class="muted" data-i18n="map_note">
+            Boucle ≈ 150–170 km. Ajoutez/retirez des haltes selon la météo. Cliquez sur “Ouvrir la carte Google” pour le guidage temps réel.
+          </p>
+          <a class="btn ghost" href="https://www.google.com/maps/dir/Dunkerque/Bergues/Veurne/Diksmuide/Lo/Monument+Albert+I+Nieuwpoort/Dunkerque" target="_blank" rel="noopener">Ouvrir dans Google Maps</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- JOUR 1 -->
+    <section class="section" id="d1">
+      <h2>Jour 1 — Bergues & Veurne</h2>
+      <div class="grid-2">
+        <div>
+          <p>Matin à Bergues (remparts Vauban, beffroi). Après-midi à Veurne (Grote Markt, halle aux viandes).</p>
+          <div class="pillgrid">
+            <div class="card"><b>Remparts & portes</b><br><a href="https://www.google.com/maps/search/?api=1&query=Remparts+Bergues" target="_blank" rel="noopener">Balade 3–5 km</a></div>
+            <div class="card"><b>Beffroi de Bergues</b><br><a href="https://www.google.com/maps/search/?api=1&query=Beffroi+Bergues" target="_blank" rel="noopener">Patrimoine UNESCO</a></div>
+            <div class="card"><b>Marché (ve.)</b><br><a href="https://www.google.com/maps/search/?api=1&query=March%C3%A9+Bergues" target="_blank" rel="noopener">Produits locaux</a></div>
+            <div class="card"><b>Grote Markt Veurne</b><br><a href="https://www.google.com/maps/search/?api=1&query=Veurne+Grote+Markt" target="_blank" rel="noopener">Maisons à pignons</a></div>
+            <div class="card"><b>Stadhuis & belfort</b><br><a href="https://www.google.com/maps/search/?api=1&query=Veurne+Town+Hall" target="_blank" rel="noopener">Hôtel de ville</a></div>
+            <div class="card"><b>Park4Night</b><br><a href="https://park4night.com/?q=Bergues%20Veurne" target="_blank" rel="noopener">Aires conseillées</a></div>
+          </div>
+        </div>
+        <div>
+          <div class="gallery">
+            <figure><img src="/img/23-rempart-bergues.webp" alt="Remparts de Bergues" loading="lazy" decoding="async"><figcaption>Bergues — remparts</figcaption></figure>
+            <figure><img src="/img/24-beffroi-bergues.webp" alt="Beffroi de Bergues" loading="lazy" decoding="async"><figcaption>Beffroi de Bergues</figcaption></figure>
+            <figure><img src="/img/03-veurne.jpg" alt="Veurne — Grote Markt" loading="lazy" decoding="async"><figcaption>Veurne — Grote Markt</figcaption></figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JOUR 2 -->
+    <section class="section" id="d2">
+      <h2>Jour 2 — Diksmuide, Lo & Nieuwpoort</h2>
+      <div class="grid-2">
+        <div>
+          <p>Matin : Diksmuide (Tour de l’Yser, Trench of Death). Midi : Lo (beffroi). Après-midi : Nieuwpoort (monument Albert Iᵉʳ) puis retour.</p>
+          <div class="pillgrid">
+            <div class="card"><b>Tour de l’Yser (Ijzertoren)</b><br><a href="https://www.google.com/maps/search/?api=1&query=Ijzertoren+Diksmuide" target="_blank" rel="noopener">Panorama & musée</a></div>
+            <div class="card"><b>Trench of Death</b><br><a href="https://www.google.com/maps/search/?api=1&query=Dodengang+Diksmuide" target="_blank" rel="noopener">Tranchées 14-18</a></div>
+            <div class="card"><b>Beffroi de Lo</b><br><a href="https://www.google.com/maps/search/?api=1&query=Lo-Reninge+Belfry" target="_blank" rel="noopener">Place & cafés</a></div>
+            <div class="card"><b>Nieuwpoort — Monument Albert Iᵉʳ</b><br><a href="https://www.google.com/maps/search/?api=1&query=Albert+I+Monument+Nieuwpoort" target="_blank" rel="noopener">Front de mer</a></div>
+            <div class="card"><b>Park4Night</b><br><a href="https://park4night.com/?q=Diksmuide%20Nieuwpoort%20Lo" target="_blank" rel="noopener">Aires & parkings</a></div>
+          </div>
+        </div>
+        <div>
+          <div class="gallery">
+            <figure><img src="/img/21-diksmuide-yser.jpg" alt="Tour de l’Yser à Diksmuide" loading="lazy" decoding="async"><figcaption>Tour de l’Yser</figcaption></figure>
