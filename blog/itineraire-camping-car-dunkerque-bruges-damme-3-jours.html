@@ -3,35 +3,46 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <title>Itinéraire camping-car 3 jours : Dunkerque → Bruges → Damme – MATLOE</title>
-  <meta name="description" content="Road trip en camping-car depuis Dunkerque : plages de Malo, Bergues, côte belge (Ostende, Nieuport), Bruges, Damme, Zélande. Spots Park4Night, choses à faire, carte et photos." />
-  <link rel="canonical" href="https://www.matloe.fr/blog/itineraire-camping-car-dunkerque-bruges-damme-3-jours.html" />
+  <meta name="description" content="Road trip en camping-car depuis Dunkerque : plages de Malo, côte belge (Ostende, Nieuport), Bruges, Damme, Zélande. Spots Park4Night, idées à faire, carte et photos." />
+
+  <!-- Canonical + hreflang -->
+  <link rel="canonical" href="https://www.matloe.fr/blog/itineraire-camping-car-dunkerque-bruges-damme-3-jours.html?lang=fr" />
+  <link rel="alternate" href="https://www.matloe.fr/blog/itineraire-camping-car-dunkerque-bruges-damme-3-jours.html?lang=fr" hreflang="fr">
+  <link rel="alternate" href="https://www.matloe.fr/blog/itineraire-camping-car-dunkerque-bruges-damme-3-jours.html?lang=en" hreflang="en">
+  <link rel="alternate" href="https://www.matloe.fr/blog/itineraire-camping-car-dunkerque-bruges-damme-3-jours.html?lang=nl" hreflang="nl">
+  <link rel="alternate" href="https://www.matloe.fr/blog/itineraire-camping-car-dunkerque-bruges-damme-3-jours.html" hreflang="x-default">
+
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
   <link rel="icon" href="/img/logo-matloe.png" />
 
-  <!-- Open Graph -->
+  <!-- Open Graph + Twitter -->
   <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="MATLOE" />
   <meta property="og:title" content="Itinéraire camping-car 3 jours : Dunkerque → Bruges → Damme" />
-  <meta property="og:description" content="Spots Park4Night, idées visites et carte interactive. Partez depuis Dunkerque vers la côte belge, Bruges et Damme." />
+  <meta property="og:description" content="Spots Park4Night, idées visites et carte. Partez depuis Dunkerque vers la côte belge, Bruges et Damme." />
   <meta property="og:image" content="https://www.matloe.fr/img/01-hotel-de-ville-dunkerque.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:url" content="https://www.matloe.fr/blog/itineraire-camping-car-dunkerque-bruges-damme-3-jours.html?lang=fr" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Itinéraire camping-car 3 jours : Dunkerque → Bruges → Damme" />
+  <meta name="twitter:description" content="Spots Park4Night, idées visites et carte.">
+  <meta name="twitter:image" content="https://www.matloe.fr/img/01-hotel-de-ville-dunkerque.jpg" />
 
   <style>
-    :root{
-      --brand:#0b1220; --accent:#0e7490; --muted:#475569; --line:#e5e7eb;
-      --bg:#f8fafc;
-    }
+    :root{ --brand:#0b1220; --accent:#0e7490; --muted:#475569; --line:#e5e7eb; --bg:#f8fafc; }
     *{box-sizing:border-box}
     body{margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial; color:#0b1220; background:var(--bg)}
     img{max-width:100%; height:auto; display:block; border-radius:12px}
     a{color:var(--accent); text-decoration:none}
     a:hover{opacity:.9}
     .container{width:min(1100px,92vw); margin:0 auto; padding:0 0 40px}
-    header{
-      position:sticky; top:0; z-index:20; background:rgba(255,255,255,.9);
-      backdrop-filter:saturate(1.2) blur(6px); border-bottom:1px solid var(--line)
-    }
+    header{position:sticky; top:0; z-index:20; background:rgba(255,255,255,.9); backdrop-filter:saturate(1.2) blur(6px); border-bottom:1px solid var(--line)}
     .bar{display:flex; align-items:center; justify-content:space-between; gap:14px; padding:10px 0}
-    nav{display:flex; gap:14px; flex-wrap:wrap}
+    nav[aria-label]{display:flex; gap:14px; flex-wrap:wrap}
     .btn{display:inline-block; padding:10px 16px; border-radius:10px; font-weight:700}
     .btn.ghost{border:1px solid var(--line); background:#fff}
     .btn.primary{background:var(--accent); color:#fff}
@@ -45,6 +56,7 @@
     @media (max-width:920px){ .grid-2{grid-template-columns:1fr} }
     .gallery{display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:10px}
     .gallery figure{margin:0}
+    .gallery img{aspect-ratio:3/2; object-fit:cover}
     .gallery figcaption{font-size:14px; color:var(--muted); margin-top:6px}
     .note{font-size:14px; color:var(--muted)}
     .card{background:#fff; border:1px solid var(--line); border-radius:12px; padding:14px}
@@ -54,16 +66,46 @@
     .muted{color:var(--muted)}
     select{padding:6px 8px; border-radius:8px; border:1px solid #cbd5e1; background:#fff; color:#0b1220}
   </style>
+
+  <!-- Structured data: BlogPosting + Breadcrumbs -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BlogPosting",
+    "mainEntityOfPage":{"@type":"WebPage","@id":"https://www.matloe.fr/blog/itineraire-camping-car-dunkerque-bruges-damme-3-jours.html"},
+    "headline":"Itinéraire camping-car 3 jours : Dunkerque → Bruges → Damme",
+    "description":"Road trip depuis Dunkerque : plages, côte belge, Bruges, Damme. Spots Park4Night, carte et photos.",
+    "image":["https://www.matloe.fr/img/01-hotel-de-ville-dunkerque.jpg"],
+    "datePublished":"2025-10-15",
+    "dateModified":"2025-10-15",
+    "author":{"@type":"Person","name":"MATLOE"},
+    "publisher":{
+      "@type":"Organization",
+      "name":"MATLOE",
+      "logo":{"@type":"ImageObject","url":"https://www.matloe.fr/img/logo-matloe.png"}
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Accueil","item":"https://www.matloe.fr/"},
+      {"@type":"ListItem","position":2,"name":"Blog","item":"https://www.matloe.fr/blog/"},
+      {"@type":"ListItem","position":3,"name":"Itinéraire Dunkerque → Bruges → Damme","item":"https://www.matloe.fr/blog/itineraire-camping-car-dunkerque-bruges-damme-3-jours.html"}
+    ]
+  }
+  </script>
 </head>
 <body>
-  <!-- HEADER -->
   <header>
     <div class="container bar">
       <div class="brand" style="display:flex;align-items:center;gap:10px">
         <img src="/img/logo-matloe.png" alt="MATLOE" width="40" height="40" />
         <b>MATLOE</b>
       </div>
-      <nav>
+      <nav aria-label="Navigation principale">
         <a href="/#atouts" data-i18n="nav_home">Accueil</a>
         <a href="/#galerie" data-i18n="nav_gallery">Galerie</a>
         <a href="/#contact" data-i18n="nav_contact">Contact</a>
@@ -93,18 +135,21 @@
       </div>
     </section>
 
-    <!-- MAP -->
+    <!-- MAP (embed stable + image cliquable) -->
     <section class="section">
       <h2 data-i18n="map_title">Carte de l’itinéraire</h2>
       <div class="grid-2">
+        <!-- Affiche une carte centrée sur la zone (3 points) -->
         <iframe class="map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-          src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d0!2d2.376!3d51.03!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m18!4m17!1m5!1m1!1s0x47dc8dd2b6b8a9a1:0x40af13e81646b40!2m2!1d2.377!2d51.035!1m5!1m1!1s0x47c37c1e066a4b59:0x40099ab2f4d52a0!2m2!1d3.224!2d51.209!1m5!1m1!1s0x47c3722c5f7d9697:0x4a7b91c0c7b0b4b!2m2!1d3.281!2d51.251!3e0"
-          title="Dunkerque → Bruges → Damme"></iframe>
+          src="https://www.google.com/maps?q=Dunkerque,Bruges,Damme&z=8&output=embed"
+          title="Carte : Dunkerque, Bruges, Damme"></iframe>
         <div class="card">
           <p class="muted" data-i18n="map_note">
             L’itinéraire est volontairement court (≈ 210 km) pour profiter des étapes. Vous pouvez agrandir la carte et ajouter des arrêts.
           </p>
-          <img src="/img/30-carte-dunkerque-bruges.jpg" alt="Carte Dunkerque–Bruges–Damme" loading="lazy" width="900" height="580">
+          <a href="https://www.google.com/maps/dir/Dunkerque/Bruges/Damme/Dunkerque" target="_blank" rel="noopener" aria-label="Ouvrir l’itinéraire dans Google Maps">
+            <img src="/img/30-carte-dunkerque-bruges.jpg" alt="Carte Dunkerque–Bruges–Damme" loading="lazy" decoding="async" width="900" height="580">
+          </a>
         </div>
       </div>
     </section>
@@ -126,15 +171,14 @@
         </div>
         <div>
           <div class="gallery">
-            <figure><img src="/img/01-hotel-de-ville-dunkerque.jpg" alt="Hôtel de ville de Dunkerque"><figcaption data-i18n="cap_dk_hdv">Hôtel de ville</figcaption></figure>
-            <figure><img src="/img/27-panorama-dunkerque.webp" alt="Panorama des bassins de Dunkerque"><figcaption data-i18n="cap_dk_port">Panorama des bassins</figcaption></figure>
-            <figure><img src="/img/29-phare-dunkerque.webp" alt="Phare de Dunkerque"><figcaption data-i18n="cap_dk_phare">Phare de Dunkerque</figcaption></figure>
-            <!-- Nouvelles photos iStock -->
-            <figure><img src="/img/istockphoto-1049948408-612x612.jpg" alt="Quais et architecture contemporaine"><figcaption>Quais & FRAC</figcaption></figure>
-            <figure><img src="/img/istockphoto-827379672-612x612.jpg" alt="Plage de Malo-les-Bains"><figcaption>Malo-les-Bains</figcaption></figure>
-            <figure><img src="/img/istockphoto-1425701562-612x612.jpg" alt="Littoral et dunes"><figcaption>Dunes & littoral</figcaption></figure>
-            <figure><img src="/img/istockphoto-1130060132-612x612.jpg" alt="Beffroi et tour"><figcaption>Beffroi & tour</figcaption></figure>
-            <figure><img src="/img/istockphoto-1367671987-612x612.jpg" alt="Port de Dunkerque"><figcaption>Port de Dunkerque</figcaption></figure>
+            <figure><img src="/img/01-hotel-de-ville-dunkerque.jpg" alt="Hôtel de ville de Dunkerque" loading="lazy" decoding="async"><figcaption data-i18n="cap_dk_hdv">Hôtel de ville</figcaption></figure>
+            <figure><img src="/img/27-panorama-dunkerque.webp" alt="Panorama des bassins de Dunkerque" loading="lazy" decoding="async"><figcaption data-i18n="cap_dk_port">Panorama des bassins</figcaption></figure>
+            <figure><img src="/img/29-phare-dunkerque.webp" alt="Phare de Dunkerque" loading="lazy" decoding="async"><figcaption data-i18n="cap_dk_phare">Phare de Dunkerque</figcaption></figure>
+            <figure><img src="/img/istockphoto-1049948408-612x612.jpg" alt="Quais et architecture contemporaine" loading="lazy" decoding="async"><figcaption>Quais & FRAC</figcaption></figure>
+            <figure><img src="/img/istockphoto-827379672-612x612.jpg" alt="Plage de Malo-les-Bains" loading="lazy" decoding="async"><figcaption>Malo-les-Bains</figcaption></figure>
+            <figure><img src="/img/istockphoto-1425701562-612x612.jpg" alt="Littoral et dunes" loading="lazy" decoding="async"><figcaption>Dunes & littoral</figcaption></figure>
+            <figure><img src="/img/istockphoto-1130060132-612x612.jpg" alt="Beffroi et tour" loading="lazy" decoding="async"><figcaption>Beffroi & tour</figcaption></figure>
+            <figure><img src="/img/istockphoto-1367671987-612x612.jpg" alt="Port de Dunkerque" loading="lazy" decoding="async"><figcaption>Port de Dunkerque</figcaption></figure>
           </div>
         </div>
       </div>
@@ -155,14 +199,14 @@
         </div>
         <div>
           <div class="gallery">
-            <figure><img src="/img/05-westende.jpg" alt="Westende"><figcaption>Westende</figcaption></figure>
-            <figure><img src="/img/07-ostende.jpg" alt="Ostende"><figcaption>Ostende</figcaption></figure>
-            <figure><img src="/img/08-ostende.webp" alt="Ostende front de mer"><figcaption>Ostende front de mer</figcaption></figure>
-            <figure><img src="/img/09-ostende-facade-coloree.webp" alt="Maisons colorées à Ostende"><figcaption>Façades colorées</figcaption></figure>
-            <figure><img src="/img/10-canal-bruges.webp" alt="Canal à Bruges"><figcaption>Canal à Bruges</figcaption></figure>
-            <figure><img src="/img/11-beffroi-bruges.webp" alt="Beffroi de Bruges"><figcaption>Beffroi de Bruges</figcaption></figure>
-            <figure><img src="/img/12-bruges.webp" alt="Bruges au fil de l’eau"><figcaption>Bruges au fil de l’eau</figcaption></figure>
-            <figure><img src="/img/13-bruges.webp" alt="Clocher à Bruges"><figcaption>Quartier historique</figcaption></figure>
+            <figure><img src="/img/05-westende.jpg" alt="Westende" loading="lazy" decoding="async"><figcaption>Westende</figcaption></figure>
+            <figure><img src="/img/07-ostende.jpg" alt="Ostende" loading="lazy" decoding="async"><figcaption>Ostende</figcaption></figure>
+            <figure><img src="/img/08-ostende.webp" alt="Ostende front de mer" loading="lazy" decoding="async"><figcaption>Ostende front de mer</figcaption></figure>
+            <figure><img src="/img/09-ostende-facade-coloree.webp" alt="Maisons colorées à Ostende" loading="lazy" decoding="async"><figcaption>Façades colorées</figcaption></figure>
+            <figure><img src="/img/10-canal-bruges.webp" alt="Canal à Bruges" loading="lazy" decoding="async"><figcaption>Canal à Bruges</figcaption></figure>
+            <figure><img src="/img/11-beffroi-bruges.webp" alt="Beffroi de Bruges" loading="lazy" decoding="async"><figcaption>Beffroi de Bruges</figcaption></figure>
+            <figure><img src="/img/12-bruges.webp" alt="Bruges au fil de l’eau" loading="lazy" decoding="async"><figcaption>Bruges au fil de l’eau</figcaption></figure>
+            <figure><img src="/img/13-bruges.webp" alt="Clocher à Bruges" loading="lazy" decoding="async"><figcaption>Quartier historique</figcaption></figure>
           </div>
         </div>
       </div>
@@ -183,15 +227,15 @@
         </div>
         <div>
           <div class="gallery">
-            <figure><img src="/img/14-moulin-damme.webp" alt="Moulin de Damme"><figcaption>Moulin de Damme</figcaption></figure>
-            <figure><img src="/img/15-remparts-damme.webp" alt="Remparts de Damme"><figcaption>Remparts de Damme</figcaption></figure>
-            <figure><img src="/img/17-groede.webp" alt="Groede"><figcaption>Groede</figcaption></figure>
-            <figure><img src="/img/19-vaches-cadzand.webp" alt="Polders de Cadzand"><figcaption>Polders de Cadzand</figcaption></figure>
-            <figure><img src="/img/23-rempart-bergues.webp" alt="Remparts de Bergues"><figcaption>Bergues</figcaption></figure>
-            <figure><img src="/img/24-beffroi-bergues.webp" alt="Beffroi de Bergues"><figcaption>Beffroi de Bergues</figcaption></figure>
-            <figure><img src="/img/22-beffroi-lo.jpg" alt="Beffroi de Lo"><figcaption>Beffroi de Lo</figcaption></figure>
-            <figure><img src="/img/20-diksmuide.jpg" alt="Diksmuide"><figcaption>Diksmuide</figcaption></figure>
-            <figure><img src="/img/21-diksmuide-yser.jpg" alt="Tour de l'Yser à Diksmuide"><figcaption>Tour de l’Yser</figcaption></figure>
+            <figure><img src="/img/14-moulin-damme.webp" alt="Moulin de Damme" loading="lazy" decoding="async"><figcaption>Moulin de Damme</figcaption></figure>
+            <figure><img src="/img/15-remparts-damme.webp" alt="Remparts de Damme" loading="lazy" decoding="async"><figcaption>Remparts de Damme</figcaption></figure>
+            <figure><img src="/img/17-groede.webp" alt="Groede" loading="lazy" decoding="async"><figcaption>Groede</figcaption></figure>
+            <figure><img src="/img/19-vaches-cadzand.webp" alt="Polders de Cadzand" loading="lazy" decoding="async"><figcaption>Polders de Cadzand</figcaption></figure>
+            <figure><img src="/img/23-rempart-bergues.webp" alt="Remparts de Bergues" loading="lazy" decoding="async"><figcaption>Bergues</figcaption></figure>
+            <figure><img src="/img/24-beffroi-bergues.webp" alt="Beffroi de Bergues" loading="lazy" decoding="async"><figcaption>Beffroi de Bergues</figcaption></figure>
+            <figure><img src="/img/22-beffroi-lo.jpg" alt="Beffroi de Lo" loading="lazy" decoding="async"><figcaption>Beffroi de Lo</figcaption></figure>
+            <figure><img src="/img/20-diksmuide.jpg" alt="Diksmuide" loading="lazy" decoding="async"><figcaption>Diksmuide</figcaption></figure>
+            <figure><img src="/img/21-diksmuide-yser.jpg" alt="Tour de l'Yser à Diksmuide" loading="lazy" decoding="async"><figcaption>Tour de l’Yser</figcaption></figure>
           </div>
         </div>
       </div>
@@ -205,6 +249,7 @@
         <li data-i18n="tip2">Évitez de dormir en pleine ville à Bruges : préférez les spots indiqués Park4Night.</li>
         <li data-i18n="tip3">Sur la côte, le vent peut être fort : calez bien l’auvent et stationnez à l’abri.</li>
       </ul>
+      <p class="note">💡 Voir aussi nos <a href="/#atouts">atouts</a> et nos <a href="/#tarifs">tarifs</a>.</p>
     </section>
 
     <!-- CTA -->
@@ -231,8 +276,18 @@
   <script>
     document.getElementById('y').textContent=new Date().getFullYear();
 
+    function setCanonOg(lang){
+      const url = `https://www.matloe.fr/blog/itineraire-camping-car-dunkerque-bruges-damme-3-jours.html?lang=${lang}`;
+      const canon = document.querySelector('link[rel="canonical"]');
+      const ogurl = document.querySelector('meta[property="og:url"]');
+      if (canon) canon.setAttribute('href', url);
+      if (ogurl) ogurl.setAttribute('content', url);
+    }
+
     const i18n = {
       fr: {
+        meta_title:"Itinéraire camping-car 3 jours : Dunkerque → Bruges → Damme – MATLOE",
+        meta_desc:"Road trip depuis Dunkerque : plages, côte belge, Bruges, Damme. Spots Park4Night, carte, photos.",
         nav_home:"Accueil", nav_gallery:"Galerie", nav_contact:"Contact",
         hero_kicker:"Blog • Itinéraires",
         hero_title:"3 jours en camping-car : Dunkerque → Bruges → Damme",
@@ -255,6 +310,8 @@
         foot_city:"Dunkerque & environs • France"
       },
       en: {
+        meta_title:"3-day motorhome loop: Dunkirk → Bruges → Damme – MATLOE",
+        meta_desc:"Easy loop from Dunkirk with Park4Night stops, map and photos.",
         nav_home:"Home", nav_gallery:"Gallery", nav_contact:"Contact",
         hero_kicker:"Blog • Road trips",
         hero_title:"3-day motorhome loop: Dunkirk → Bruges → Damme",
@@ -277,6 +334,8 @@
         foot_city:"Dunkirk & area • France"
       },
       nl: {
+        meta_title:"3 dagen met de camper: Duinkerke → Brugge → Damme – MATLOE",
+        meta_desc:"Makkelijke route met Park4Night-plekken, kaart en foto’s.",
         nav_home:"Start", nav_gallery:"Galerij", nav_contact:"Contact",
         hero_kicker:"Blog • Routes",
         hero_title:"3 dagen met de camper: Duinkerke → Brugge → Damme",
@@ -303,9 +362,12 @@
     function applyLang(lang){
       const d=i18n[lang]||i18n.fr;
       document.documentElement.lang=lang;
+      const t=document.querySelector('title'); if(t&&d.meta_title) t.textContent=d.meta_title;
+      const m=document.querySelector('meta[name="description"]'); if(m&&d.meta_desc) m.setAttribute('content', d.meta_desc);
       document.querySelectorAll("[data-i18n]").forEach(el=>{
         const k=el.getAttribute("data-i18n"); if(d[k]) el.innerHTML=d[k];
       });
+      setCanonOg(lang);
     }
     (function(){
       const p=new URLSearchParams(location.search);
@@ -320,4 +382,3 @@
   </script>
 </body>
 </html>
-
